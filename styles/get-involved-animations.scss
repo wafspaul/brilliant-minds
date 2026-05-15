@@ -1,0 +1,158 @@
+// Get Involved page animations - keeping exact same UI, just removing Framer Motion flickering
+
+// Hero background - video stays, no floating elements
+.hero-video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  // Content fade in
+  .content-animate {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease 0.3s forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  // Section animations
+  .section-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+    
+    &.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  // Card hover effects
+  .card-hover {
+    transition: all 0.6s ease;
+    
+    &:hover {
+      transform: translateY(-10px) scale(1.02);
+    }
+  }
+  
+  // Involvement way cards
+  .involvement-card {
+    transition: all 0.7s ease;
+    
+    &:hover {
+      transform: translateY(-15px);
+    }
+  }
+  
+  // Donation slider
+  .donation-slider {
+    transition: all 0.3s ease;
+  }
+  
+  // Volunteer opportunity transitions
+  .volunteer-showcase {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.8s ease;
+    
+    &.active {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  // Navigation dots
+  .nav-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+    &.active {
+      background: #10b981;
+      width: 32px;
+      border-radius: 6px;
+    }
+  }
+  
+  // Button hover effects
+  .btn-hover {
+    transition: all 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-2px) scale(1.05);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+    
+    &:active {
+      transform: translateY(0) scale(0.98);
+    }
+  }
+  
+  // Scroll indicator
+  .scroll-indicator {
+    animation: scrollBounce 2s ease-in-out infinite;
+  }
+  
+  @keyframes scrollBounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(15px);
+    }
+  }
+  
+  .scroll-dot {
+    animation: scrollDot 2s ease-in-out infinite;
+  }
+  
+  @keyframes scrollDot {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(16px);
+    }
+  }
+  
+  // Impact card animation
+  .impact-card-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: impactFadeIn 0.5s ease forwards;
+  }
+  
+  @keyframes impactFadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  // Prevent flickering
+  * {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  
+  // Stable layout
+  .stable-layout {
+    min-height: 100vh;
+    position: relative;
+  }
+  

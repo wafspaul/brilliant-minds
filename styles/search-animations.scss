@@ -1,0 +1,276 @@
+// Search Page Animations
+
+// Section Reveal Animation
+.section-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+  
+    &.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  // Search Result Card Animation
+  .search-result-card {
+    animation: slideInUp 0.6s ease-out;
+    animation-fill-mode: both;
+    animation-delay: calc(var(--index) * 0.1s);
+    
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      
+      .result-image {
+        transform: scale(1.05);
+      }
+    }
+  }
+  
+  .result-image {
+    transition: transform 0.3s ease;
+  }
+  
+  // Search Input Animations
+  .search-input {
+    transition: all 0.3s ease;
+    
+    &:focus {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(59, 130, 246, 0.1);
+    }
+  }
+  
+  .category-filter {
+    transition: all 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  .loading-card {
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+  }
+  
+  // Empty State Animation
+  .empty-state {
+    animation: fadeInScale 0.8s ease-out;
+  }
+  
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  // Popular Search Button Animation
+  .popular-search-btn {
+    transition: all 0.3s ease;
+    
+    &:hover {
+      transform: translateX(5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  // Tag Animation
+  .search-tag {
+    transition: all 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
+    }
+  }
+  
+  // Search Form Animation
+  .search-form {
+    animation: slideInDown 0.6s ease-out;
+  }
+  
+  // Suggestion Card Animation
+  .suggestion-card {
+    transition: all 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 5px 15px rgba(59, 130, 246, 0.1);
+    }
+  }
+  
+  // Quick Access Animation
+  .quick-access-item {
+    transition: all 0.3s ease;
+    
+    &:hover {
+      transform: translateX(8px);
+      box-shadow: 0 3px 10px rgba(34, 197, 94, 0.1);
+    }
+  }
+  
+  // Keyframe Animations
+  @keyframes slideInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  // Search Highlight Animation
+  .search-highlight {
+    background: linear-gradient(120deg, #fbbf24 0%, #f59e0b 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    animation: highlight 0.8s ease-out;
+  }
+  
+  @keyframes highlight {
+    from {
+      background-size: 0% 0.2em;
+    }
+    to {
+      background-size: 100% 0.2em;
+    }
+  }
+  
+  // Mobile Search Animation
+  .mobile-search-expand {
+    animation: expandWidth 0.3s ease-out;
+  }
+  
+  @keyframes expandWidth {
+    from {
+      width: 0;
+      opacity: 0;
+    }
+    to {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+  
+  // Filter Dropdown Animation
+  .filter-dropdown {
+    animation: slideInFade 0.3s ease-out;
+  }
+  
+  @keyframes slideInFade {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  // Responsive Adjustments
+  @media (max-width: 768px) {
+    .search-result-card:hover {
+      transform: translateY(-2px);
+    }
+    
+    .popular-search-btn:hover {
+      transform: translateX(3px);
+    }
+    
+    .quick-access-item:hover {
+      transform: translateX(5px);
+    }
+  }
+  
+  // Text Clamp Utilities
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  // Stagger Animation for Multiple Results
+  .stagger-animation {
+    animation-delay: calc(var(--index) * 0.1s);
+  }
+  
+  // Search Icon Pulse
+  .search-icon-pulse {
+    animation: iconPulse 2s infinite;
+  }
+  
+  @keyframes iconPulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  // Focus Styles for Accessibility
+  .focus-visible {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+  }
+  
+  // Print Styles
+  @media print {
+    .no-print {
+      display: none !important;
+    }
+  }
+  

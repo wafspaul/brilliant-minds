@@ -1,0 +1,94 @@
+// Simple, stable animations - no flickering or content loss
+
+// Hero background - simple fade only
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    
+    &.active {
+      opacity: 1;
+    }
+  }
+  
+  // Content animations - stable and smooth
+  .content-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease 0.3s forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  // Section reveal on scroll - simple and stable
+  .section-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+    
+    &.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  // Card hover - simple lift
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  // Counter animation - smooth counting
+  .counter {
+    display: inline-block;
+    font-weight: bold;
+  }
+  
+  // Navigation dots - simple
+  .nav-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+    &.active {
+      background: white;
+      width: 24px;
+      border-radius: 6px;
+    }
+  }
+  
+  // Prevent any flickering or content loss
+  * {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  
+  // Ensure smooth scrolling
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  // Stable layout - prevent content jumping
+  .stable-layout {
+    min-height: 100vh;
+    position: relative;
+  }
+  
