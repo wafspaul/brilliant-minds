@@ -117,6 +117,10 @@ const ImpactPage = () => {
       return () => observer.disconnect()
     }, [hasStarted, numericValue])
 
+    if (!numericValue) {
+      return <span className="counter">{value}</span>
+    }
+
     return (
       <span ref={ref} className="counter">
         {count.toLocaleString()}

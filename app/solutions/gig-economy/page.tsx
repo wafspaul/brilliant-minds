@@ -584,7 +584,7 @@ const GigEconomyPage = () => {
             <h2 className="text-4xl lg:text-5xl font-bold mb-6">Ready to Transform Your Career?</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto mb-8" />
             <p className="text-xl text-gray-200 mb-12 max-w-4xl mx-auto leading-relaxed">
-              Join thousands of professionals who have found meaningful work through our AI-powered gig economy platform
+              Kazi Pap is live. If you are a young Kenyan looking for work or gigs, this is where you start.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <a

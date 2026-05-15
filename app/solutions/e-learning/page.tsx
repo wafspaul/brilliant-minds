@@ -501,7 +501,7 @@ const ELearningPage = () => {
           <div className="section-reveal text-center">
             <h2 className="text-4xl lg:text-6xl font-bold mb-8">Ready to Transform Your Learning Experience?</h2>
             <p className="text-xl text-gray-200 mb-12 max-w-4xl mx-auto leading-relaxed">
-              Join thousands of learners who have discovered the power of microlearning with BrilliantMinds
+              The e-learning platform is in development. Get in touch if you want early access when it launches.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <a href="/contact" className="px-10 py-5 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold text-lg rounded-full hover:shadow-2xl transition-all duration-300 btn-hover">

@@ -448,18 +448,18 @@ function Homepage() {
             className="mt-16 flex justify-center items-center space-x-8"
           >
             <div className="text-center">
-              <div className="text-2xl font-bold text-white">2.5M+</div>
-              <div className="text-sm text-white/70">Lives Impacted</div>
+              <div className="text-2xl font-bold text-white">6,000+</div>
+              <div className="text-sm text-white/70">People Reached</div>
             </div>
             <div className="w-px h-12 bg-white/30"></div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-white">50+</div>
-              <div className="text-sm text-white/70">Countries</div>
+              <div className="text-2xl font-bold text-white">47</div>
+              <div className="text-sm text-white/70">Counties Mapped</div>
             </div>
             <div className="w-px h-12 bg-white/30"></div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-white">95%</div>
-              <div className="text-sm text-white/70">Success Rate</div>
+              <div className="text-2xl font-bold text-white">2</div>
+              <div className="text-sm text-white/70">Live Platforms</div>
             </div>
           </motion.div>
         </motion.div>

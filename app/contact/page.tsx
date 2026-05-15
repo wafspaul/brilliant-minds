@@ -287,7 +287,7 @@ const ContactPage = () => {
               {
                 icon: Shield,
                 title: "Trusted Partner",
-                description: "Over 200+ successful partnerships across East Africa",
+                description: "Open to partnerships with NGOs, telcos, and organisations working in Kenya",
                 color: "from-blue-500 to-cyan-500",
               },
               {

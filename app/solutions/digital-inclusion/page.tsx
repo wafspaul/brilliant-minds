@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react"
 import {
   Wifi,
   Smartphone,
-  MapPin,
   Building,
   Users,
   Globe,
@@ -91,7 +90,7 @@ const DigitalInclusionPage = () => {
         "Tablet Programs",
         "Accessibility Equipment",
       ],
-      impact: "12,650+ devices distributed globally",
+      impact: "Connecting communities across Kenya",
     },
     {
       icon: Wifi,
@@ -100,7 +99,7 @@ const DigitalInclusionPage = () => {
       image: "/images/connectivity.jpg",
       gradient: "from-green-600/90 to-emerald-600/90",
       features: ["Telecom Partnerships", "Community Wi-Fi", "Satellite Internet", "Mobile Hotspots"],
-      impact: "95% connectivity improvement",
+      impact: "47 counties mapped with live data",
     },
     {
       icon: Network,
@@ -118,70 +117,41 @@ const DigitalInclusionPage = () => {
       image: "/images/coworking-spaces.jpg",
       gradient: "from-orange-600/90 to-red-600/90",
       features: ["High-Speed Internet", "Modern Equipment", "Training Programs", "Community Events"],
-      impact: "1,450+ spaces established",
+      impact: "Community spaces in planning",
     },
   ]
 
   const impactMetrics = [
     {
-      number: "2.5M+",
-      label: "Lives Connected",
-      description: "Individuals gained digital access",
+      number: "47",
+      label: "Counties Mapped",
+      description: "Every county in Kenya covered by our connectivity map",
       icon: Users,
       color: "from-blue-500 to-cyan-500",
     },
     {
-      number: "12,650+",
-      label: "Devices Distributed",
-      description: "Refurbished technology provided",
+      number: "6,000+",
+      label: "People Reached",
+      description: "Individuals reached across our programs and platforms",
       icon: Smartphone,
       color: "from-green-500 to-emerald-500",
     },
     {
-      number: "1,450+",
-      label: "Tech Hubs Created",
-      description: "Community spaces established",
+      number: "2",
+      label: "Live Platforms",
+      description: "Kazi Pap and the Kenya Connectivity Map, both in production",
       icon: Building,
       color: "from-purple-500 to-violet-500",
     },
     {
-      number: "95%",
-      label: "Coverage Improvement",
-      description: "Network optimization achieved",
+      number: "More",
+      label: "On the Way",
+      description: "Digital inclusion tools actively in development",
       icon: Signal,
       color: "from-orange-500 to-red-500",
     },
   ]
 
-  const successStories = [
-    {
-      name: "John Doe",
-      location: "Nairobi, Kenya",
-      story: "Received a refurbished laptop and internet access through our program",
-      impact: "Started online tutoring business, increased income by 400%",
-      image: "/images/success-story-1.jpg",
-      quote: "Digital inclusion changed my life. Now I can support my family and help other students learn.",
-      program: "Device Donation",
-    },
-    {
-      name: "Community Center Lagos",
-      location: "Lagos, Nigeria",
-      story: "Transformed into a digital hub serving 500+ community members monthly",
-      impact: "85% of users gained new digital skills within 6 months",
-      image: "https://images.unsplash.com/photo-1534134368327-3d2bd764f1ac?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      quote: "Our community center became the heart of digital transformation in our neighborhood.",
-      program: "Co-Working Space",
-    },
-    {
-      name: "Rural School Network",
-      location: "Kenya",
-      story: "Connected 25 rural schools through our AI mapping and connectivity solutions",
-      impact: "Student engagement increased by 300%, graduation rates improved by 45%",
-      image: "/images/success-story-3.jpg",
-      quote: "Technology brought the world to our classrooms. Our students now dream bigger.",
-      program: "Connectivity Solutions",
-    },
-  ]
 
   const partnershipOptions = [
     {
@@ -371,15 +341,15 @@ const DigitalInclusionPage = () => {
                 {/* Floating Stats */}
                 <div className="absolute -top-6 -right-6 bg-white/10 backdrop-blur-lg rounded-2xl p-4 border border-white/20">
                   <div className="text-center">
-                    <p className="text-2xl font-bold text-white">2.5M+</p>
-                    <p className="text-xs text-cyan-300">Connected</p>
+                    <p className="text-2xl font-bold text-white">47</p>
+                    <p className="text-xs text-cyan-300">Counties</p>
                   </div>
                 </div>
 
                 <div className="absolute -bottom-6 -left-6 bg-white/10 backdrop-blur-lg rounded-2xl p-4 border border-white/20">
                   <div className="text-center">
-                    <p className="text-2xl font-bold text-white">95%</p>
-                    <p className="text-xs text-cyan-300">Success Rate</p>
+                    <p className="text-2xl font-bold text-white">Live</p>
+                    <p className="text-xs text-cyan-300">Now</p>
                   </div>
                 </div>
               </div>
@@ -532,57 +502,33 @@ const DigitalInclusionPage = () => {
         </div>
       </section>
 
-      {/* Success Stories */}
+      {/* Impact in Progress */}
       <section className="py-20 bg-gradient-to-br from-blue-50 to-cyan-50">
         <div className="container mx-auto px-4">
-          <div className="section-reveal text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Success Stories</h2>
-            <div className="w-24 h-1 from-blue-500 to-cyan-600 mx-auto mb-8" />
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our digital inclusion programs have transformed communities across the country. From rural villages to
-              urban neighborhoods, we&apos;re making a difference.
+          <div className="section-reveal text-center">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">The Work in Progress</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-600 mx-auto mb-8" />
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
+              We are early stage. The platforms are live. The stories are building. Check back as the numbers grow.
             </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {successStories.map((story, index) => (
-              <div
-                key={index}
-                className="section-reveal card-hover bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-100"
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+              <a
+                href="https://kazipap.co.ke"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold text-lg hover:shadow-xl transition-all duration-300"
               >
-                <div className="relative h-48">
-                  <Image
-                    src={story.image || "/placeholder.svg"}
-                    alt={story.name}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover"
-                    quality={85}
-                  />
-                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1">
-                    <span className="text-xs font-semibold text-gray-700">{story.program}</span>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-1">{story.name}</h3>
-                  <div className="flex items-center text-gray-600 mb-3">
-                    <MapPin className="w-4 h-4 mr-1" />
-                    <span className="text-sm">{story.location}</span>
-                  </div>
-                  <p className="text-gray-700 mb-4 text-sm leading-relaxed italic">&ldquo;{story.quote}&rdquo;</p>
-                  <div className="space-y-2">
-                    <div>
-                      <span className="text-xs text-gray-600">Story:</span>
-                      <p className="text-sm text-gray-700">{story.story}</p>
-                    </div>
-                    <div className="pt-2 border-t border-gray-100">
-                      <span className="text-xs text-gray-600">Impact:</span>
-                      <p className="text-sm font-semibold text-green-600">{story.impact}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
+                Try Kazi Pap
+              </a>
+              <a
+                href="https://kenya-connectivity-map.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold text-lg hover:shadow-xl transition-all duration-300"
+              >
+                View Connectivity Map
+              </a>
+            </div>
           </div>
         </div>
       </section>

@@ -117,7 +117,7 @@ const GetInvolvedPage = () => {
       location: "Remote",
       skills: ["Communication", "Patience", "Basic Tech"],
       image: "/images/volunteer-mentor.jpg",
-      impact: "50+ mentees supported",
+      impact: "Mentoring open",
     },
     {
       title: "Content Creator",
@@ -126,7 +126,7 @@ const GetInvolvedPage = () => {
       location: "Remote",
       skills: ["Writing", "Design", "Video Editing"],
       image: "/images/volunteer-creator.jpg",
-      impact: "100+ resources created",
+      impact: "Content welcome",
     },
     {
       title: "Community Facilitator",
@@ -135,7 +135,7 @@ const GetInvolvedPage = () => {
       location: "On-site",
       skills: ["Public Speaking", "Leadership", "Cultural Sensitivity"],
       image: "/images/volunteer-facilitator.jpg",
-      impact: "25+ workshops led",
+      impact: "Workshops forming",
     },
     {
       title: "Tech Support Specialist",
@@ -521,19 +521,19 @@ const GetInvolvedPage = () => {
                     icon: Smartphone,
                     title: "Laptops & Computers",
                     description: "Working computers for students and professionals",
-                    count: "500+ needed",
+                    count: "Get in touch",
                   },
                   {
                     icon: Smartphone,
                     title: "Tablets & Mobile Devices",
                     description: "Portable devices for mobile learning",
-                    count: "300+ needed",
+                    count: "Get in touch",
                   },
                   {
                     icon: Globe,
                     title: "Networking Equipment",
                     description: "Routers and modems for connectivity",
-                    count: "100+ needed",
+                    count: "Get in touch",
                   },
                 ].map((item, index) => (
                   <div
@@ -763,8 +763,7 @@ const GetInvolvedPage = () => {
           <div className="section-reveal text-center">
             <h2 className="text-4xl lg:text-6xl font-bold text-white mb-8">Ready to Make a Difference?</h2>
             <p className="text-xl text-gray-200 mb-12 max-w-4xl mx-auto leading-relaxed">
-              Join thousands of individuals and organizations who are already creating positive change in communities
-              worldwide. Your contribution, no matter the size, makes a real difference.
+              We are building something real in Kenya. If that matters to you, there is a place for you here — as a volunteer, a partner, or a donor.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <button
