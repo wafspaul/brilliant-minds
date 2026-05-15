@@ -141,7 +141,7 @@ const ELearningPage = () => {
     {
       name: "Jessica Williams",
       role: "Marketing Professional",
-      image: "/images/elearning-testimonial-1.jpg",
+      image: "/images/elearning-hero-1.jpg",
       quote:
         "The bite-sized lessons fit perfectly into my busy schedule. I was able to complete a digital marketing certification while working full-time.",
       achievement: "Completed 5 courses in 3 months",

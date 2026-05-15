@@ -77,7 +77,7 @@ const AboutPage = () => {
       name: "Paul Wamocha",
       role: "Founder & CEO",
       bio: "Builder focused on closing the digital access gap in Kenya. Shipped Kazi Pap for AI-powered job matching and the Kenya Connectivity Map to make the digital divide visible with data.",
-      image: "/images/paul-founder.jpg",
+      image: "/images/paul-founder.jpeg",
       expertise: ["Product Development", "AI Applications", "Social Impact"],
       achievements: "2 live platforms in production",
       location: "Nairobi, Kenya",
@@ -500,7 +500,7 @@ const AboutPage = () => {
               <video
                 ref={videoRef}
                 className="w-full h-full object-cover"
-                poster="/images/bm-event.jpg"
+                poster="/images/bm-event.jpeg"
                 autoPlay={isVideoPlaying}
               >
                 <source src="/assets/team.mp4" type="video/mp4" />

@@ -312,7 +312,7 @@ function Homepage() {
               className="relative rounded-2xl overflow-hidden shadow-2xl"
             >
               <Image
-                src="/images/bm-community.jpg"
+                src="/images/bm-community.jpeg"
                 alt="Community members we work with"
                 width={800}
                 height={600}
