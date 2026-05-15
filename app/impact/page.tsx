@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState, useRef } from "react"
-import { Users, Smartphone, Target, MapPin, Calendar, Building, Zap, Briefcase } from "lucide-react"
+import { Users, Smartphone, Target, MapPin, Calendar, Building, Zap } from "lucide-react"
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import Image from "next/image"
