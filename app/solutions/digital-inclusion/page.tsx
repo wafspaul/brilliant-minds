@@ -31,7 +31,7 @@ const DigitalInclusionPage = () => {
       description:
         "Providing devices, internet connectivity, and access to co-working spaces for marginalized communities to enable digital participation.",
       image: "/images/digital-hero-1.jpg",
-      stats: "2.5M+ Lives Connected",
+      stats: "47 Counties Mapped",
     },
     {
       title: "Smart Connectivity",
@@ -39,7 +39,7 @@ const DigitalInclusionPage = () => {
       description:
         "Using artificial intelligence to identify connectivity gaps and optimize network infrastructure for underserved communities.",
       image: "/images/digital-hero-2.jpg",
-      stats: "95% Coverage Improvement",
+      stats: "AI-Driven Gap Analysis",
     },
     {
       title: "Community Hubs",
@@ -47,7 +47,7 @@ const DigitalInclusionPage = () => {
       description:
         "Establishing co-working spaces equipped with high-speed internet and modern devices for community access and collaboration.",
       image: "/images/digital-hero-3.jpg",
-      stats: "1,450+ Spaces Established",
+      stats: "Nairobi + Counties",
     },
   ]
 
@@ -316,18 +316,20 @@ const DigitalInclusionPage = () => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
-  <button 
-    onClick={() => window.location.href = '/about/partners'}
+  <a
+    href="https://kenya-connectivity-map.vercel.app"
+    target="_blank"
+    rel="noopener noreferrer"
     className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold rounded-full hover:shadow-2xl transition-all duration-300 btn-hover"
   >
-    Partner with Us
-  </button>
-  <button 
-    onClick={() => window.location.href = '/get-involved'}
+    View Live Map
+  </a>
+  <a
+    href="/contact"
     className="px-8 py-4 bg-white/20 backdrop-blur-lg border-2 border-white/30 text-white font-bold rounded-full hover:bg-white/30 transition-all duration-300 btn-hover"
   >
-    Donate a Device
-  </button>
+    Partner with Us
+  </a>
 </div>
               </div>
             </div>
@@ -622,26 +624,26 @@ const DigitalInclusionPage = () => {
           </div>
 
           <div className="section-reveal text-center">
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-          <button 
-            onClick={() => window.location.href = '/about/partners'}
-            className="px-10 py-5 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold text-lg rounded-full hover:shadow-2xl transition-all duration-300 btn-hover"
-          >
-            Become a Partner
-          </button>
-          <button 
-            onClick={() => window.location.href = '/get-involved'}
-            className="px-10 py-5 border-2 border-white text-white font-bold text-lg rounded-full hover:bg-white hover:text-blue-900 transition-all duration-300 btn-hover"
-          >
-            Donate a Device
-          </button>
-          <button 
-            onClick={() => window.location.href = '/contact'}
-            className="px-10 py-5 bg-white/20 backdrop-blur-lg text-white font-bold text-lg rounded-full hover:bg-white/30 transition-all duration-300 btn-hover"
-          >
-            Find a Co-Working Space
-          </button>
-        </div>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+              <a
+                href="/about/partners"
+                className="px-10 py-5 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold text-lg rounded-full hover:shadow-2xl transition-all duration-300 btn-hover"
+              >
+                Become a Partner
+              </a>
+              <a
+                href="/contact"
+                className="px-10 py-5 border-2 border-white text-white font-bold text-lg rounded-full hover:bg-white hover:text-blue-900 transition-all duration-300 btn-hover"
+              >
+                Donate a Device
+              </a>
+              <a
+                href="/contact"
+                className="px-10 py-5 bg-white/20 backdrop-blur-lg text-white font-bold text-lg rounded-full hover:bg-white/30 transition-all duration-300 btn-hover"
+              >
+                Contact Us
+              </a>
+            </div>
           </div>
         </div>
       </section>

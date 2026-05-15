@@ -1,8 +1,7 @@
 "use client"
 
-import React, { useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import {
-  Newspaper,
   Clock,
   User,
   Eye,
@@ -13,9 +12,6 @@ import {
   ArrowRight,
   Bookmark,
   Bell,
-  Globe,
-  Award,
-  Users,
 } from "lucide-react"
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
@@ -162,36 +158,7 @@ const NewsPage = () => {
   ]
 
 
-  const newsStats = [
-    {
-      number: "500K+",
-      label: "Monthly Readers",
-      description: "Global audience engagement",
-      icon: Users,
-      color: "from-blue-500 to-cyan-500",
-    },
-    {
-      number: "1,200+",
-      label: "Articles Published",
-      description: "Comprehensive news coverage",
-      icon: Newspaper,
-      color: "from-green-500 to-emerald-500",
-    },
-    {
-      number: "50+",
-      label: "Expert Contributors",
-      description: "Industry thought leaders",
-      icon: Award,
-      color: "from-purple-500 to-violet-500",
-    },
-    {
-      number: "25+",
-      label: "Countries Covered",
-      description: "Global news network",
-      icon: Globe,
-      color: "from-orange-500 to-red-500",
-    },
-  ]
+  // newsStats removed - no verified numbers available yet
 
   useEffect(() => {
     const featuredInterval = setInterval(() => {
@@ -484,44 +451,12 @@ const NewsPage = () => {
           </div>
 
           <div className="text-center mt-12">
-            <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-bold rounded-full hover:shadow-xl transition-all duration-300 btn-hover">
-              Load More Articles
-            </button>
+            <p className="text-gray-500 text-sm">More articles coming soon.</p>
           </div>
         </div>
       </section>
 
 
-      {/* News Stats */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="section-reveal text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Our News Impact</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-8" />
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Delivering trusted news and insights to a global audience of professionals and decision-makers
-            </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {newsStats.map((stat, index) => (
-              <div
-                key={index}
-                className="section-reveal card-hover bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 text-center shadow-xl border border-gray-100"
-              >
-                <div
-                  className={`w-20 h-20 bg-gradient-to-r ${stat.color} rounded-full flex items-center justify-center mx-auto mb-6`}
-                >
-                  {React.createElement(stat.icon, { className: "w-10 h-10 text-white" })}
-                </div>
-                <div className="text-4xl font-bold text-gray-900 mb-2">{stat.number}</div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">{stat.label}</h3>
-                <p className="text-gray-600 text-sm">{stat.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Newsletter Signup */}
       <section className="py-20 bg-gradient-to-r from-indigo-900 via-blue-800 to-purple-900 text-white">
@@ -537,18 +472,14 @@ const NewsPage = () => {
               who trust our newsletter.
             </p>
 
-            <div className="max-w-md mx-auto">
-              <div className="flex flex-col sm:flex-row gap-4">
-                <input
-                  type="email"
-                  placeholder="Enter your email address"
-                  className="flex-1 px-6 py-4 rounded-full text-white border-amber-50 border-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                />
-                <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-bold rounded-full hover:shadow-2xl transition-all duration-300 btn-hover">
-                  Subscribe
-                </button>
-              </div>
-              <p className="text-sm text-gray-300 mt-4">No spam, unsubscribe at any time. We respect your privacy.</p>
+            <div className="max-w-md mx-auto text-center">
+              <a
+                href="mailto:hello@brilliantminds.co.ke?subject=Newsletter Signup"
+                className="inline-block px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-bold rounded-full hover:shadow-2xl transition-all duration-300 btn-hover"
+              >
+                Email Us to Subscribe
+              </a>
+              <p className="text-sm text-gray-300 mt-4">hello@brilliantminds.co.ke</p>
             </div>
           </div>
         </div>

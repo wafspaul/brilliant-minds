@@ -23,6 +23,37 @@ import "@/styles/privacy-animations.scss"
 
 const PrivacyPage = () => {
   const [activeSection, setActiveSection] = useState("privacy-policy")
+  const [privacyForm, setPrivacyForm] = useState({ name: "", email: "", subject: "Privacy Policy Question", message: "" })
+  const [privacySubmitting, setPrivacySubmitting] = useState(false)
+  const [privacySubmitted, setPrivacySubmitted] = useState(false)
+  const [privacyError, setPrivacyError] = useState("")
+
+  const handlePrivacySubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setPrivacySubmitting(true)
+    setPrivacyError("")
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...privacyForm, purpose: privacyForm.subject }),
+      })
+      const result = await response.json()
+      if (result.success) {
+        setPrivacySubmitted(true)
+        setTimeout(() => {
+          setPrivacySubmitted(false)
+          setPrivacyForm({ name: "", email: "", subject: "Privacy Policy Question", message: "" })
+        }, 5000)
+      } else {
+        setPrivacyError(result.message || "Failed to send. Please try again.")
+      }
+    } catch {
+      setPrivacyError("Network error. Please check your connection.")
+    } finally {
+      setPrivacySubmitting(false)
+    }
+  }
 
   const heroContent = {
     title: "Privacy & Legal Information",
@@ -83,20 +114,20 @@ const PrivacyPage = () => {
     {
       icon: Mail,
       title: "Email Us",
-      info: "privacy@brilliantminds.com",
+      info: "hello@brilliantminds.co.ke",
       description: "For privacy-related inquiries",
     },
     {
       icon: Phone,
       title: "Call Us",
-      info: "+1 (555) 123-4567",
-      description: "Monday to Friday, 9 AM - 6 PM EST",
+      info: "+254 756 556 522",
+      description: "Monday to Friday, 9 AM - 6 PM EAT",
     },
     {
       icon: MapPin,
-      title: "Visit Us",
-      info: "123 Innovation Drive, Tech City, TC 12345",
-      description: "Our headquarters",
+      title: "Find Us",
+      info: "Nairobi, Kenya",
+      description: "East Africa",
     },
   ]
 
@@ -657,51 +688,78 @@ const PrivacyPage = () => {
           <div className="section-reveal mt-16 max-w-2xl mx-auto">
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Send Us a Message</h3>
-              <form className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-2">Name</label>
-                    <input
-                      type="text"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                      placeholder="Your full name"
-                    />
+              {privacySubmitted ? (
+                <div className="text-center py-8">
+                  <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
+                  <p className="text-xl font-bold text-gray-900">Message sent.</p>
+                  <p className="text-gray-600 mt-2">We will get back to you within 24 hours.</p>
+                </div>
+              ) : (
+                <form className="space-y-6" onSubmit={handlePrivacySubmit}>
+                  {privacyError && (
+                    <div className="p-4 bg-red-50 border border-red-200 rounded-lg">
+                      <p className="text-red-600 text-sm">{privacyError}</p>
+                    </div>
+                  )}
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <label className="block text-sm font-semibold text-gray-700 mb-2">Name</label>
+                      <input
+                        type="text"
+                        required
+                        value={privacyForm.name}
+                        onChange={(e) => setPrivacyForm(prev => ({ ...prev, name: e.target.value }))}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        placeholder="Your full name"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-semibold text-gray-700 mb-2">Email</label>
+                      <input
+                        type="email"
+                        required
+                        value={privacyForm.email}
+                        onChange={(e) => setPrivacyForm(prev => ({ ...prev, email: e.target.value }))}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        placeholder="your@email.com"
+                      />
+                    </div>
                   </div>
                   <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-2">Email</label>
-                    <input
-                      type="email"
+                    <label className="block text-sm font-semibold text-gray-700 mb-2">Subject</label>
+                    <select
+                      value={privacyForm.subject}
+                      onChange={(e) => setPrivacyForm(prev => ({ ...prev, subject: e.target.value }))}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                      placeholder="your@email.com"
+                    >
+                      <option>Privacy Policy Question</option>
+                      <option>Data Access Request</option>
+                      <option>Data Deletion Request</option>
+                      <option>Cookie Policy Question</option>
+                      <option>Terms of Service Question</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-2">Message</label>
+                    <textarea
+                      rows={5}
+                      required
+                      value={privacyForm.message}
+                      onChange={(e) => setPrivacyForm(prev => ({ ...prev, message: e.target.value }))}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      placeholder="Please describe your privacy-related question or concern..."
                     />
                   </div>
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">Subject</label>
-                  <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                    <option>Privacy Policy Question</option>
-                    <option>Data Access Request</option>
-                    <option>Data Deletion Request</option>
-                    <option>Cookie Policy Question</option>
-                    <option>Terms of Service Question</option>
-                    <option>Other</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">Message</label>
-                  <textarea
-                    rows={5}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                    placeholder="Please describe your privacy-related question or concern..."
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="w-full px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-bold rounded-lg hover:shadow-xl transition-all duration-300 btn-hover"
-                >
-                  Send Message
-                </button>
-              </form>
+                  <button
+                    type="submit"
+                    disabled={privacySubmitting}
+                    className="w-full px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-bold rounded-lg hover:shadow-xl transition-all duration-300 btn-hover disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    {privacySubmitting ? "Sending..." : "Send Message"}
+                  </button>
+                </form>
+              )}
             </div>
           </div>
         </div>

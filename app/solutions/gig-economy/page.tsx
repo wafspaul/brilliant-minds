@@ -31,7 +31,7 @@ const GigEconomyPage = () => {
       description:
         "Connect with verified opportunities worldwide through our AI-powered platform that ensures fair, transparent, and secure freelancing experiences.",
       image: "/images/gig-hero-1.jpg",
-      stats: "50K+ Verified Gigs",
+      stats: "Live on kazipap.co.ke",
       highlight: "Smart Matching",
     },
     {
@@ -40,7 +40,7 @@ const GigEconomyPage = () => {
       description:
         "Advanced AI verification systems ensure every opportunity is legitimate, protecting freelancers from fraudulent activities and unsafe work conditions.",
       image: "/images/gig-hero-2.jpg",
-      stats: "99.8% Scam Prevention",
+      stats: "AI-Verified Opportunities",
       highlight: "Verified Security",
     },
     {
@@ -49,7 +49,7 @@ const GigEconomyPage = () => {
       description:
         "Access international freelancing opportunities across multiple industries including HR, marketing, development, design, and more.",
       image: "/images/gig-hero-3.jpg",
-      stats: "120+ Countries Served",
+      stats: "Kenya + Remote Global Jobs",
       highlight: "Global Reach",
     },
   ]
@@ -315,12 +315,12 @@ const GigEconomyPage = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 sm:justify-center pt-2 sm:pt-4">
-                <button className="px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold text-sm sm:text-base rounded-full hover:shadow-2xl transition-all duration-300 btn-hover">
-                  Join Platform
-                </button>
-                <button className="px-6 py-3 sm:px-8 sm:py-4 bg-white/20 backdrop-blur-lg border-2 border-white/30 text-white font-bold text-sm sm:text-base rounded-full hover:bg-white/30 transition-all duration-300 btn-hover">
-                  Browse Gigs
-                </button>
+                <a href="https://kazipap.co.ke" target="_blank" rel="noopener noreferrer" className="px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold text-sm sm:text-base rounded-full hover:shadow-2xl transition-all duration-300 btn-hover">
+                  Open Kazi Pap
+                </a>
+                <a href="/contact" className="px-6 py-3 sm:px-8 sm:py-4 bg-white/20 backdrop-blur-lg border-2 border-white/30 text-white font-bold text-sm sm:text-base rounded-full hover:bg-white/30 transition-all duration-300 btn-hover">
+                  Learn More
+                </a>
               </div>
             </div>
           </div>
@@ -587,19 +587,21 @@ const GigEconomyPage = () => {
               Join thousands of professionals who have found meaningful work through our AI-powered gig economy platform
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-  <button 
-    onClick={() => window.location.href = '/contact'}
-    className="px-10 py-5 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold text-lg rounded-full hover:shadow-2xl transition-all duration-300 btn-hover"
-  >
-    Join the Platform
-  </button>
-  <button 
-    onClick={() => window.location.href = '/solutions/gig-economy'}
-    className="px-10 py-5 border-2 border-white text-white font-bold text-lg rounded-full hover:bg-white hover:text-purple-900 transition-all duration-300 btn-hover"
-  >
-    Explore Opportunities
-  </button>
-</div>
+              <a
+                href="https://kazipap.co.ke"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-10 py-5 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold text-lg rounded-full hover:shadow-2xl transition-all duration-300 btn-hover"
+              >
+                Open Kazi Pap
+              </a>
+              <a
+                href="/contact"
+                className="px-10 py-5 border-2 border-white text-white font-bold text-lg rounded-full hover:bg-white hover:text-purple-900 transition-all duration-300 btn-hover"
+              >
+                Contact Us
+              </a>
+            </div>
           </div>
         </div>
       </section>

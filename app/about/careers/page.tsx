@@ -7,7 +7,6 @@ import {
   TrendingUp,
   Target,
   CheckCircle,
-  Star,
   Building,
   Zap,
   Heart,
@@ -32,44 +31,44 @@ const CareersPage = () => {
 
   const heroContent = [
     {
-      title: "Build Your Future With Us",
-      subtitle: "Where Innovation Meets Opportunity",
+      title: "Build Something Real With Us",
+      subtitle: "Where Technology Meets Social Impact",
       description:
-        "Join a team of passionate professionals who are shaping the future of digital transformation and making a real impact on communities worldwide.",
+        "Join us in building platforms that help young Kenyans access work, education, and opportunity. Small team, big mission.",
       image:
         "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
-      stats: "200+ Team Members",
+      stats: "Nairobi, Kenya",
       highlight: "Join Our Team",
     },
     {
-      title: "Remote-First Culture",
-      subtitle: "Work From Anywhere in the World",
+      title: "Work That Matters",
+      subtitle: "Building for East Africa",
       description:
-        "Experience the freedom of remote work while collaborating with talented individuals from over 50 countries in a truly global environment.",
+        "We build products people actually need. Every line of code connects someone to a job, a skill, or an opportunity they could not find before.",
       image:
         "https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      stats: "50+ Countries",
-      highlight: "Remote First",
+      stats: "Kenya + Africa",
+      highlight: "Meaningful Work",
     },
     {
       title: "Growth & Development",
       subtitle: "Invest in Your Professional Journey",
       description:
-        "Access unlimited learning opportunities, mentorship programs, and career advancement paths designed to help you reach your full potential.",
+        "Work alongside people who care about the craft. Get real ownership of projects that reach thousands of users across Kenya.",
       image:
         "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      stats: "$5K Learning Budget",
+      stats: "Real Ownership",
       highlight: "Professional Growth",
     },
     {
       title: "Impact-Driven Mission",
       subtitle: "Make a Difference Every Day",
       description:
-        "Be part of meaningful projects that create positive change in education, employment, and digital transformation across emerging markets.",
+        "Be part of projects that create real change in education, employment, and digital access for communities across East Africa.",
       image:
         "https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80",
-      stats: "1M+ Lives Impacted",
-      highlight: "Meaningful Work",
+      stats: "6,000+ People Reached",
+      highlight: "Real Impact",
     },
   ]
 
@@ -147,65 +146,34 @@ const CareersPage = () => {
 
   const openPositions = [
     {
-      title: "Senior Software Engineer",
+      title: "Frontend Developer",
       department: "Engineering",
-      location: "Remote",
-      type: "Full-time",
-      salary: "$120K - $160K",
-      description: "Build scalable systems that power our global platform and impact millions of users worldwide.",
-      requirements: ["5+ years experience", "React/Node.js", "Cloud platforms", "System design"],
+      location: "Nairobi / Remote",
+      type: "Full-time or Contract",
+      salary: "Competitive",
+      description: "Build the interfaces that connect Kenyan youth to jobs, skills, and opportunity. You will own real features on live products.",
+      requirements: ["React / Next.js", "TypeScript", "Tailwind CSS", "Problem-solving mindset"],
       color: "from-blue-500 to-blue-600",
     },
     {
-      title: "Product Manager",
-      department: "Product",
-      location: "Remote",
+      title: "Growth & Partnerships",
+      department: "Growth",
+      location: "Nairobi",
       type: "Full-time",
-      salary: "$110K - $140K",
-      description: "Drive product strategy and execution for our core platform serving users across emerging markets.",
-      requirements: ["3+ years PM experience", "Data-driven mindset", "User research", "Agile methodology"],
+      salary: "Competitive",
+      description: "Build relationships with NGOs, corporates, and county governments who want to co-create digital inclusion programs.",
+      requirements: ["Strong communicator", "East Africa networks", "Strategic thinking", "Self-starter"],
       color: "from-green-500 to-green-600",
     },
     {
-      title: "UX/UI Designer",
-      department: "Design",
-      location: "Remote",
-      type: "Full-time",
-      salary: "$90K - $120K",
-      description: "Create intuitive and beautiful user experiences that make complex workflows simple and accessible.",
-      requirements: ["4+ years design experience", "Figma/Sketch", "User research", "Design systems"],
-      color: "from-purple-500 to-purple-600",
-    },
-    {
-      title: "Data Scientist",
-      department: "Analytics",
-      location: "Remote",
-      type: "Full-time",
-      salary: "$130K - $170K",
-      description:
-        "Analyze user behavior and business metrics to drive data-informed decisions and product improvements.",
-      requirements: ["PhD/Masters in relevant field", "Python/R", "Machine learning", "Statistical analysis"],
-      color: "from-orange-500 to-orange-600",
-    },
-    {
-      title: "DevOps Engineer",
-      department: "Engineering",
-      location: "Remote",
-      type: "Full-time",
-      salary: "$115K - $145K",
-      description: "Build and maintain infrastructure that ensures our platform scales reliably across global markets.",
-      requirements: ["4+ years DevOps experience", "AWS/GCP", "Kubernetes", "CI/CD pipelines"],
-      color: "from-red-500 to-red-600",
-    },
-    {
-      title: "Marketing Manager",
+      title: "Content & Community",
       department: "Marketing",
-      location: "Remote",
-      type: "Full-time",
-      salary: "$85K - $110K",
-      description: "Develop and execute marketing strategies to grow our user base and brand presence globally.",
-      requirements: ["3+ years marketing experience", "Digital marketing", "Analytics", "Content strategy"],
-      color: "from-cyan-500 to-cyan-600",
+      location: "Nairobi / Remote",
+      type: "Part-time or Full-time",
+      salary: "Competitive",
+      description: "Tell our story, build our community, and help the people we serve understand what our platforms can do for them.",
+      requirements: ["Writing skills", "Social media savvy", "Kenya context knowledge", "Video a plus"],
+      color: "from-purple-500 to-purple-600",
     },
   ]
 
@@ -245,38 +213,6 @@ const CareersPage = () => {
     { icon: Building, title: "Team Retreats", description: "Annual company-wide gatherings" },
   ]
 
-  const testimonials = [
-    {
-      name: "Sarah Brown",
-      role: "Senior Software Engineer",
-      image:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      quote:
-        "The learning opportunities here are incredible. I've grown more in 2 years than I did in my previous 5 years combined. The team truly cares about your development.",
-      rating: 5,
-      tenure: "2 years",
-    },
-    {
-      name: "Marcus Rodriguez",
-      role: "Product Manager",
-      image:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-      quote:
-        "Working remotely while having such strong team collaboration has been amazing. The impact we're making on global education keeps me motivated every day.",
-      rating: 5,
-      tenure: "3 years",
-    },
-    {
-      name: "Aisha Patel",
-      role: "UX Designer",
-      image:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-      quote:
-        "The diversity of perspectives here is incredible. Every project challenges me to think differently and create solutions that work for users worldwide.",
-      rating: 5,
-      tenure: "1.5 years",
-    },
-  ]
 
   useEffect(() => {
     const heroInterval = setInterval(() => {
@@ -368,12 +304,12 @@ const CareersPage = () => {
   >
     View Open Positions
   </button>
-  <button 
-    onClick={() => window.location.href = '/about'}
+  <a
+    href="/about"
     className="px-6 py-3 sm:px-8 sm:py-4 bg-white/20 backdrop-blur-lg border-2 border-white/30 text-white font-bold text-sm sm:text-base hover:bg-white/30 transition-all duration-300 btn-hover"
   >
-    Learn About Culture
-  </button>
+    Learn About Us
+  </a>
 </div>
             </div>
           </div>
@@ -548,9 +484,12 @@ const CareersPage = () => {
                       ))}
                     </div>
                   </div>
-                  <button className="w-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold py-3 hover:shadow-lg transition-all duration-300 btn-hover">
-                    Apply Now
-                  </button>
+                  <a
+                    href="mailto:hello@brilliantminds.co.ke?subject=Application: Position Interest"
+                    className="block w-full text-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold py-3 hover:shadow-lg transition-all duration-300 btn-hover"
+                  >
+                    Apply via Email
+                  </a>
                 </div>
               </div>
             ))}
@@ -588,52 +527,18 @@ const CareersPage = () => {
         </div>
       </section>
 
-      {/* Employee Testimonials */}
+      {/* What to expect */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="section-reveal text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">What Our Team Says</h2>
+          <div className="section-reveal text-center max-w-3xl mx-auto">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">What to Expect</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-8" />
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Hear directly from our team members about their experience working at BrilliantMinds
+            <p className="text-xl text-gray-700 leading-relaxed mb-6">
+              We are early. That means you will not join a company with 10 layers of management. You join a founder who is building in the open, ships fast, and cares deeply about the people the product serves.
             </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className="section-reveal card-hover bg-gradient-to-br from-gray-50 to-white shadow-xl border border-gray-100 overflow-hidden"
-              >
-                <div className="relative h-48">
-                  <Image
-                    src={testimonial.image || "/placeholder.svg"}
-                    alt={testimonial.name}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover"
-                    quality={85}
-                  />
-                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1">
-                    <span className="text-xs font-semibold text-gray-700">{testimonial.tenure}</span>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900">{testimonial.name}</h3>
-                      <p className="text-blue-600 font-semibold">{testimonial.role}</p>
-                    </div>
-                    <div className="flex">
-                      {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
-                      ))}
-                    </div>
-                  </div>
-                  <p className="text-gray-700 italic leading-relaxed">&ldquo;{testimonial.quote}&rdquo;</p>
-                </div>
-              </div>
-            ))}
+            <p className="text-lg text-gray-600 leading-relaxed">
+              You get real ownership, real problems, and real users. If that sounds like the kind of work you want to do, send us a message.
+            </p>
           </div>
         </div>
       </section>
@@ -660,12 +565,12 @@ const CareersPage = () => {
             >
               View All Positions
             </button>
-            <button 
-              onClick={() => window.location.href = '/about'}
+            <a
+              href="/about"
               className="px-10 py-5 border-2 border-white text-white font-bold text-lg hover:bg-white hover:text-indigo-900 transition-all duration-300 btn-hover"
             >
-              Learn About Culture
-            </button>
+              Learn About Us
+            </a>
           </div>
           </div>
         </div>

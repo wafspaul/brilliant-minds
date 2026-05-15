@@ -41,7 +41,7 @@ const AboutPage = () => {
         "We embrace creative thinking and novel approaches to solve complex challenges facing underserved communities.",
       color: "from-yellow-400/20 to-orange-500/40",
       bgImage: "/images/value-innovation.jpg",
-      stats: "50+ Innovative Solutions",
+      stats: "Built in Nairobi",
     },
     {
       icon: Handshake,
@@ -50,7 +50,7 @@ const AboutPage = () => {
         "We believe in the power of partnership and work closely with communities to create solutions that truly meet their needs.",
       color: "from-blue-400/20 to-purple-500/40",
       bgImage: "https://images.unsplash.com/photo-1521790797524-b2497295b8a0?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      stats: "200+ Active Partners",
+      stats: "Open to Partnerships",
     },
     {
       icon: Zap,
@@ -59,7 +59,7 @@ const AboutPage = () => {
         "We focus on building capacity and empowering individuals to create lasting impact and self-sufficiency.",
       color: "from-green-400/20 to-teal-500/40",
       bgImage: "/images/value-empowerment.jpg",
-      stats: "2.5M+ Lives Empowered",
+      stats: "6,000+ People Reached",
     },
     {
       icon: Heart,
@@ -68,7 +68,7 @@ const AboutPage = () => {
         "We are committed to fair access and opportunity, ensuring our solutions address systemic barriers and promote inclusion.",
       color: "from-pink-400/20 to-red-500/40",
       bgImage: "/images/value-equity.jpg",
-      stats: "95% Equity Score",
+      stats: "Kenya + East Africa",
     },
   ]
 
@@ -120,33 +120,27 @@ const AboutPage = () => {
 
   const milestones = [
     {
-      year: "2019",
-      title: "Foundation Established",
-      description: "BrilliantMinds was founded with a mission to bridge the digital divide",
+      year: "2023",
+      title: "Foundation",
+      description: "BrilliantMinds started with a clear question: why is it so hard for Kenyan youth to find decent work or learn digital skills?",
       icon: Lightbulb,
     },
     {
-      year: "2020",
-      title: "First Digital Inclusion Program",
-      description: "Launched our flagship program serving 1,000 individuals in underserved communities",
+      year: "2024",
+      title: "Kenya Connectivity Map",
+      description: "Built an interactive map showing internet and electricity coverage across all 47 counties, giving NGOs and telcos real data on the digital divide.",
       icon: Wifi,
     },
     {
-      year: "2021",
-      title: "E-Learning Platform Launch",
-      description: "Introduced innovative microlearning platform with 50+ courses",
-      icon: BookOpen,
-    },
-    {
-      year: "2022",
-      title: "Gig Economy Integration",
-      description: "Launched AI-powered platform connecting freelancers with verified opportunities",
+      year: "2025",
+      title: "Kazi Pap Launch",
+      description: "Shipped an AI-powered job matching platform for Kenyan youth. Users upload their CV, scan live jobs, and get ranked matches with ATS tips.",
       icon: Briefcase,
     },
     {
-      year: "2023",
-      title: "Global Expansion",
-      description: "Expanded operations to 18 countries, impacting over 2.5M lives",
+      year: "2026",
+      title: "What Is Next",
+      description: "Skill development programs and an e-learning platform are in the works. The goal is the same: real tools, for real people, in Kenya.",
       icon: Globe,
     },
   ]
@@ -234,7 +228,7 @@ const AboutPage = () => {
                 <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Our Mission</h2>
                 <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mb-6" />
                 <p className="text-xl text-gray-700 leading-relaxed mb-8">
-                  To empower marginalized communities by bridging the digital divide and fostering equitable
+                  To empower marginalized communities by bridging the digital divide and creating equitable
                   opportunities through innovation, collaboration, and sustainable solutions.
                 </p>
               </div>
@@ -624,19 +618,19 @@ const AboutPage = () => {
               Together, we can bridge digital divides and create opportunities for underserved communities.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <button 
-              onClick={() => window.location.href = '/get-involved'}
-              className="px-8 py-4 bg-white text-purple-900 font-bold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg btn-hover"
-            >
-              Start Your Journey
-            </button>
-            <button 
-              onClick={() => window.location.href = '/get-involved'}
-              className="px-8 py-4 border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-purple-900 transition-all duration-300 btn-hover"
-            >
-              Support Our Mission
-            </button>
-          </div>
+              <a
+                href="/get-involved"
+                className="px-8 py-4 bg-white text-purple-900 font-bold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg btn-hover"
+              >
+                Get Involved
+              </a>
+              <a
+                href="/contact"
+                className="px-8 py-4 border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-purple-900 transition-all duration-300 btn-hover"
+              >
+                Contact Us
+              </a>
+            </div>
           </div>
         </div>
       </section>

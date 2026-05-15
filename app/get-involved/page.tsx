@@ -16,7 +16,6 @@ import {
   TrendingUp,
   CheckCircle,
   ArrowRight,
-  Star,
   Clock,
   MapPin,
   Zap,
@@ -44,7 +43,7 @@ const GetInvolvedPage = () => {
         "Your contributions make our work possible. Choose the way you'd like to support communities worldwide.",
       color: "from-red-500 to-pink-500",
       bgImage: "/images/value-equity.jpg",
-      stats: "$2.5M+ Raised",
+      stats: "Support Our Work",
       features: ["Financial Donations", "Device Donations", "Recurring Support", "Corporate Matching"],
     },
     {
@@ -55,7 +54,7 @@ const GetInvolvedPage = () => {
       color: "from-blue-500 to-cyan-500",
       bgImage:
         "https://images.unsplash.com/photo-1461532257246-777de18cd58b?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      stats: "5,000+ Volunteers",
+      stats: "Join Our Network",
       features: ["Skill-Based Volunteering", "Remote Opportunities", "Local Chapters", "Leadership Roles"],
     },
     {
@@ -66,7 +65,7 @@ const GetInvolvedPage = () => {
       color: "from-purple-500 to-indigo-500",
       bgImage:
         "https://images.unsplash.com/photo-1521790797524-b2497295b8a0?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      stats: "200+ Partners",
+      stats: "Open to Partners",
       features: ["Corporate Partnerships", "NGO Collaboration", "Government Relations", "Academic Alliances"],
     },
   ]
@@ -188,28 +187,6 @@ const GetInvolvedPage = () => {
     },
   ]
 
-  const successStories = [
-    {
-      name: "Sarah Martinez",
-      role: "Corporate Partner Lead",
-      company: "TechCorp Solutions",
-      image: "/images/success-story-1.jpg",
-      quote:
-        "Our partnership with BrilliantMinds has transformed how we approach corporate social responsibility. We've seen incredible engagement from our employees and measurable impact in communities.",
-      impact: "Funded 50+ digital literacy programs",
-      rating: 5,
-    },
-    {
-      name: "Marcus Johnson",
-      role: "Volunteer Coordinator",
-      company: "Independent Volunteer",
-      image: "/images/success-story-2.jpg",
-      quote:
-        "Volunteering with BrilliantMinds has been incredibly rewarding. I've been able to use my tech skills to directly help people in my community gain digital literacy.",
-      impact: "Trained 200+ community members",
-      rating: 5,
-    },
-  ]
 
   // Impact rotation
   useEffect(() => {
@@ -407,9 +384,9 @@ const GetInvolvedPage = () => {
                 ))}
               </div>
 
-              <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold rounded-full hover:shadow-lg transition-all duration-300 btn-hover">
-                Become a Partner
-              </button>
+              <a href="/contact" className="inline-block px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold rounded-full hover:shadow-lg transition-all duration-300 btn-hover">
+                Reach Out to Partner
+              </a>
             </div>
 
             <div className="section-reveal relative">
@@ -425,18 +402,18 @@ const GetInvolvedPage = () => {
                 <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/30 to-purple-900/30" />
               </div>
 
-              {/* Stats */}
+              {/* CTA badge */}
               <div className="absolute -top-6 -right-6 bg-white rounded-2xl p-6 shadow-xl border border-gray-100">
                 <div className="text-center">
-                  <p className="text-3xl font-bold text-blue-600">200+</p>
-                  <p className="text-sm text-gray-600">Active Partners</p>
+                  <p className="text-lg font-bold text-blue-600">Open to</p>
+                  <p className="text-sm text-gray-600">Partnerships</p>
                 </div>
               </div>
 
               <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl p-6 shadow-xl border border-gray-100">
                 <div className="text-center">
-                  <p className="text-3xl font-bold text-purple-600">$5M+</p>
-                  <p className="text-sm text-gray-600">Partnership Value</p>
+                  <p className="text-lg font-bold text-purple-600">Kenya</p>
+                  <p className="text-sm text-gray-600">Based. Africa Focused.</p>
                 </div>
               </div>
             </div>
@@ -576,9 +553,9 @@ const GetInvolvedPage = () => {
                   </div>
                 ))}
 
-                <button className="w-full py-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold rounded-full hover:shadow-lg transition-all duration-300 btn-hover">
-                  Donate Devices
-                </button>
+                <a href="/contact" className="block w-full py-4 text-center bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold rounded-full hover:shadow-lg transition-all duration-300 btn-hover">
+                  Get in Touch About Devices
+                </a>
               </div>
             </div>
           </div>
@@ -685,9 +662,9 @@ const GetInvolvedPage = () => {
                 ))}
               </div>
 
-              <button className="px-8 py-4 bg-gradient-to-r from-green-500 to-teal-500 text-white font-bold rounded-full hover:shadow-lg transition-all duration-300 btn-hover">
-                Apply to Volunteer
-              </button>
+              <a href="/contact" className="inline-block px-8 py-4 bg-gradient-to-r from-green-500 to-teal-500 text-white font-bold rounded-full hover:shadow-lg transition-all duration-300 btn-hover">
+                Get in Touch to Volunteer
+              </a>
             </div>
           </div>
 
@@ -742,55 +719,28 @@ const GetInvolvedPage = () => {
           </div>
 
           <div className="section-reveal text-center mt-12">
-            <button className="px-10 py-5 bg-gradient-to-r from-purple-500 to-indigo-600 text-white font-bold text-lg rounded-full hover:shadow-lg transition-all duration-300 btn-hover">
-              Explore Partnership Options
-            </button>
+            <a href="/contact" className="inline-block px-10 py-5 bg-gradient-to-r from-purple-500 to-indigo-600 text-white font-bold text-lg rounded-full hover:shadow-lg transition-all duration-300 btn-hover">
+              Discuss Partnership Options
+            </a>
           </div>
         </div>
       </section>
 
-      {/* Success Stories */}
+      {/* Get in Touch CTA */}
       <section className="py-20 bg-gradient-to-br from-indigo-50 to-purple-50">
         <div className="container mx-auto px-4">
-          <div className="section-reveal text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Success Stories</h2>
+          <div className="section-reveal text-center max-w-3xl mx-auto">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Want to Work Together?</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-600 mx-auto mb-8" />
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Hear from our partners and volunteers about their experience making a difference with BrilliantMinds.
+            <p className="text-xl text-gray-600 mb-10 leading-relaxed">
+              Whether you want to partner, volunteer, or support our work in any way, reach out directly. We read every message.
             </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {successStories.map((story, index) => (
-              <div
-                key={index}
-                className="section-reveal card-hover bg-white rounded-2xl p-8 shadow-lg border border-gray-100"
-              >
-                <div className="flex items-center mb-6">
-                  <Image
-                    src={story.image || "/placeholder.svg"}
-                    alt={story.name}
-                    width={64}
-                    height={64}
-                    className="w-16 h-16 rounded-full object-cover mr-4"
-                  />
-                  <div>
-                    <h4 className="text-xl font-bold text-gray-900">{story.name}</h4>
-                    <p className="text-gray-600">{story.role}</p>
-                    <p className="text-sm text-blue-600 font-semibold">{story.company}</p>
-                  </div>
-                </div>
-                <p className="text-gray-700 italic mb-6">&ldquo;{story.quote}&rdquo;</p>
-                <div className="flex items-center justify-between">
-                  <div className="flex space-x-1">
-                    {[...Array(story.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                    ))}
-                  </div>
-                  <span className="text-sm font-semibold text-green-600">{story.impact}</span>
-                </div>
-              </div>
-            ))}
+            <a
+              href="/contact"
+              className="inline-block px-10 py-5 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-bold text-lg rounded-full hover:shadow-2xl transition-all duration-300"
+            >
+              Contact Us
+            </a>
           </div>
         </div>
       </section>
@@ -823,18 +773,18 @@ const GetInvolvedPage = () => {
               >
                 Get Started Today
               </button>
-              <button
-                onClick={() => (window.location.href = "/contact")}
+              <a
+                href="/contact"
                 className="px-10 py-5 border-2 border-white text-white font-bold text-lg rounded-full hover:bg-white hover:text-purple-900 transition-all duration-300 btn-hover"
               >
                 Contact Us
-              </button>
-              <button
-                onClick={() => (window.location.href = "/contact")}
+              </a>
+              <a
+                href="/about"
                 className="px-10 py-5 bg-white/20 backdrop-blur-lg text-white font-bold text-lg rounded-full hover:bg-white/30 transition-all duration-300 btn-hover"
               >
-                Learn More
-              </button>
+                About Us
+              </a>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState, useRef } from "react"
-import { Users, Smartphone, Target, MapPin, Calendar, Building, Zap } from "lucide-react"
+import { Users, Smartphone, Target, MapPin, Building, Zap } from "lucide-react"
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import Image from "next/image"
@@ -53,84 +53,6 @@ const ImpactPage = () => {
     },
   ]
 
-  const successStories = [
-    {
-      name: "Amara Okafor",
-      type: "Individual Beneficiary",
-      location: "Lagos, Nigeria",
-      program: "Digital Inclusion",
-      story:
-        "Received a refurbished laptop through our device donation program and gained internet access at a local co-working space",
-      benefit: "Started her own digital marketing consultancy",
-      achievement: "300% income increase in 8 months",
-      image: "/images/connectivity.jpg",
-      quote:
-        "BrilliantMinds gave me the tools I needed to transform my life. The laptop and internet access opened doors I never knew existed.",
-    },
-    {
-      name: "Carlos Rodriguez",
-      type: "Individual Beneficiary",
-      location: "Mexico City, Mexico",
-      program: "E-Learning Revolution",
-      story: "Completed web development courses through our microlearning platform while working as a street vendor",
-      benefit: "Secured full-time employment as a software developer",
-      achievement: "Career transformation in 12 months",
-      image: "/images/gig-testimonial-2.jpg",
-      quote:
-        "The bite-sized lessons fit perfectly with my schedule. I could learn between customers and now I'm a certified developer.",
-    },
-    {
-      name: "Priya Sharma",
-      type: "Individual Beneficiary",
-      location: "Mumbai, India",
-      program: "Gig Economy Integration",
-      story: "Found verified freelance graphic design opportunities through our AI-powered platform",
-      benefit: "Built a sustainable freelance business",
-      achievement: "Financial independence as single mother",
-      image: "/images/gig-testimonial-3.jpg",
-      quote:
-        "The platform helped me avoid scams and find legitimate clients. I now support my family of 4 through freelancing.",
-    },
-    {
-      name: "TechForward NGO",
-      type: "Organization Beneficiary",
-      location: "Nairobi, Kenya",
-      program: "Partnership Program",
-      story: "Partnered with BrilliantMinds to establish 5 community tech hubs in underserved areas",
-      benefit: "Expanded their reach and impact significantly",
-      achievement: "Served 2,000+ additional beneficiaries",
-      image: "/images/coworking-spaces.jpg",
-      quote:
-        "Our partnership with BrilliantMinds amplified our impact. Together, we've transformed entire communities.",
-    },
-  ]
-
-  const communityTransformations = [
-    {
-      title: "Maasailand Village, Kenya",
-      description: "Complete digital transformation of a rural community",
-      beforeImage: "/images/digital-hero-1.jpg",
-      afterImage: "/images/coworking-spaces.jpg",
-      stats: [
-        { label: "Internet Access", value: "95%" },
-        { label: "Digital Literacy", value: "80%" },
-        { label: "Income Increase", value: "250%" },
-      ],
-      timeframe: "18 months",
-    },
-    {
-      title: "São Paulo Urban School Initiative",
-      description: "Modernizing education in underserved urban areas",
-      beforeImage: "/images/elearning-hero-1.jpg",
-      afterImage: "/images/content-sessions.jpg",
-      stats: [
-        { label: "Student Engagement", value: "400%" },
-        { label: "Graduation Rate", value: "85%" },
-        { label: "Tech Skills", value: "90%" },
-      ],
-      timeframe: "12 months",
-    },
-  ]
 
   const globalReach = [
     { region: "Kenya", countries: 47, beneficiaries: "6,000+", color: "text-blue-600" },
@@ -263,8 +185,7 @@ const ImpactPage = () => {
               <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">Impact</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-200 mb-12 max-w-4xl mx-auto leading-relaxed">
-              Transforming communities through technology, education, and empowerment. See the real difference we&apos;re
-              making in lives around the world.
+              Grounded in Kenya. Building toward Africa. Real platforms, real data, real work.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <a
@@ -328,133 +249,33 @@ const ImpactPage = () => {
         </div>
       </section>
 
-      {/* Success Stories */}
+      {/* Impact in Progress */}
       <section id="success-stories" className="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
         <div className="container mx-auto px-4">
-          <div className="section-reveal text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Success Stories</h2>
+          <div className="section-reveal text-center">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">The Work in Progress</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-8" />
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Testimonials from individuals and organizations that have benefited from BrilliantMinds programs
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
+              We are early stage. The platforms are live. The stories are building. Check back as the numbers grow.
             </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {successStories.map((story, index) => (
-              <div
-                key={index}
-                className="section-reveal card-hover bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 h-full"
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+              <a
+                href="https://kazipap.co.ke"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-purple-500 to-violet-500 text-white font-bold text-lg hover:shadow-xl transition-all duration-300"
               >
-                <div className="relative h-48">
-                  <Image
-                    src={story.image || "/placeholder.svg"}
-                    alt={story.name}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                    className="object-cover"
-                  />
-                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1">
-                    <span className="text-xs font-semibold text-gray-700">{story.type}</span>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-1">{story.name}</h3>
-                  <div className="flex items-center text-gray-600 mb-2">
-                    <MapPin className="w-4 h-4 mr-1" />
-                    <span className="text-sm">{story.location}</span>
-                  </div>
-                  <div className="text-sm text-blue-600 font-semibold mb-3">{story.program}</div>
-                  <p className="text-gray-700 mb-4 text-sm leading-relaxed italic">&ldquo;{story.quote}&rdquo;</p>
-                  <div className="space-y-2">
-                    <div>
-                      <span className="text-xs text-gray-600">Story:</span>
-                      <p className="text-sm text-gray-700">{story.story}</p>
-                    </div>
-                    <div>
-                      <span className="text-xs text-gray-600">Benefit:</span>
-                      <p className="text-sm font-semibold text-green-600">{story.benefit}</p>
-                    </div>
-                    <div className="pt-2 border-t border-gray-100">
-                      <p className="text-xs text-purple-600 font-medium">{story.achievement}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Community Transformations */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="section-reveal text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Community Transformations</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-green-500 to-teal-600 mx-auto mb-8" />
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              Witness the dramatic positive changes in communities through our comprehensive programs
-            </p>
-          </div>
-
-          <div className="space-y-20">
-            {communityTransformations.map((transformation, index) => (
-              <div
-                key={index}
-                className={`section-reveal grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? "lg:grid-flow-col-dense" : ""}`}
+                Try Kazi Pap
+              </a>
+              <a
+                href="https://kenya-connectivity-map.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold text-lg hover:shadow-xl transition-all duration-300"
               >
-                <div className={`space-y-8 ${index % 2 === 1 ? "lg:col-start-2" : ""}`}>
-                  <div>
-                    <h3 className="text-3xl font-bold text-gray-900 mb-4">{transformation.title}</h3>
-                    <p className="text-xl text-gray-700 mb-6">{transformation.description}</p>
-                    <div className="flex items-center text-gray-600 mb-8">
-                      <Calendar className="w-5 h-5 mr-2" />
-                      <span>Transformation completed in {transformation.timeframe}</span>
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-3 gap-6">
-                    {transformation.stats.map((stat, idx) => (
-                      <div
-                        key={idx}
-                        className="card-hover text-center p-4 bg-gradient-to-br from-green-50 to-teal-50 rounded-xl border border-green-100"
-                      >
-                        <div className="text-3xl font-bold text-green-600 mb-2">{stat.value}</div>
-                        <div className="text-sm text-gray-700">{stat.label}</div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div className={`relative ${index % 2 === 1 ? "lg:col-start-1" : ""}`}>
-                  <div className="grid grid-cols-2 gap-4 h-96">
-                    <div className="card-hover relative rounded-xl overflow-hidden shadow-lg">
-                      <Image
-                        src={transformation.beforeImage || "/placeholder.svg"}
-                        alt="Before transformation"
-                        fill
-                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                        className="object-cover"
-                      />
-                      <div className="absolute bottom-4 left-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                        Before
-                      </div>
-                    </div>
-                    <div className="card-hover relative rounded-xl overflow-hidden shadow-lg">
-                      <Image
-                        src={transformation.afterImage || "/placeholder.svg"}
-                        alt="After transformation"
-                        fill
-                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                        className="object-cover"
-                      />
-                      <div className="absolute bottom-4 left-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                        After
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
+                View Connectivity Map
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -536,25 +357,19 @@ const ImpactPage = () => {
           <div className="section-reveal text-center">
             <h3 className="text-3xl font-bold mb-8">Help Us Reach These Goals</h3>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-  <button 
-    onClick={() => window.location.href = '/contact'}
-    className="px-10 py-5 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold text-lg rounded-full hover:shadow-2xl transition-all duration-300"
-  >
-    Join Our Mission
-  </button>
-  <button 
-    onClick={() => window.location.href = '/contact'}
-    className="px-10 py-5 border-2 border-white text-white font-bold text-lg rounded-full hover:bg-white hover:text-purple-900 transition-all duration-300"
-  >
-    Partner With Us
-  </button>
-  <button 
-    onClick={() => window.location.href = '/contact'}
-    className="px-10 py-5 bg-white/20 backdrop-blur-lg text-white font-bold text-lg rounded-full hover:bg-white/30 transition-all duration-300"
-  >
-    Learn More
-  </button>
-</div>
+              <a
+                href="/contact"
+                className="px-10 py-5 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold text-lg rounded-full hover:shadow-2xl transition-all duration-300"
+              >
+                Join Our Mission
+              </a>
+              <a
+                href="/get-involved"
+                className="px-10 py-5 border-2 border-white text-white font-bold text-lg rounded-full hover:bg-white hover:text-purple-900 transition-all duration-300"
+              >
+                Partner With Us
+              </a>
+            </div>
           </div>
         </div>
       </section>

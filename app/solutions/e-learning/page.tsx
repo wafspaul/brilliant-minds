@@ -18,7 +18,7 @@ const ELearningPage = () => {
         "Innovative microlearning platform that makes education accessible, engaging, and effective for learners worldwide.",
       image:
         "https://images.unsplash.com/photo-1516397281156-ca07cf9746fc?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      stats: "150K+ Skills Certified",
+      stats: "Coming Soon",
       highlight: "Bite-sized Learning",
     },
     {
@@ -28,7 +28,7 @@ const ELearningPage = () => {
         "Interactive features including quizzes, videos, and progress tracking that make learning fun and memorable.",
       image:
         "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      stats: "95% Completion Rate",
+      stats: "In Development",
       highlight: "Interactive Content",
     },
     {
@@ -38,7 +38,7 @@ const ELearningPage = () => {
         "Join a worldwide community of learners with courses covering academic topics, professional skills, and freelancing basics.",
       image:
         "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      stats: "50+ Countries Served",
+      stats: "Kenya + East Africa",
       highlight: "Global Access",
     },
   ]
@@ -277,12 +277,12 @@ const ELearningPage = () => {
               
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 sm:justify-center pt-2 sm:pt-4">
-                <button className="px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold text-sm sm:text-base rounded-full hover:shadow-2xl transition-all duration-300 btn-hover">
-                  Start Learning
-                </button>
-                <button className="px-6 py-3 sm:px-8 sm:py-4 bg-white/20 backdrop-blur-lg border-2 border-white/30 text-white font-bold text-sm sm:text-base rounded-full hover:bg-white/30 transition-all duration-300 btn-hover">
-                  Browse Courses
-                </button>
+                <a href="/contact" className="px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold text-sm sm:text-base rounded-full hover:shadow-2xl transition-all duration-300 btn-hover">
+                  Get Notified at Launch
+                </a>
+                <a href="/contact" className="px-6 py-3 sm:px-8 sm:py-4 bg-white/20 backdrop-blur-lg border-2 border-white/30 text-white font-bold text-sm sm:text-base rounded-full hover:bg-white/30 transition-all duration-300 btn-hover">
+                  Learn More
+                </a>
               </div>
             </div>
           </div>
@@ -504,12 +504,12 @@ const ELearningPage = () => {
               Join thousands of learners who have discovered the power of microlearning with BrilliantMinds
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <button className="px-10 py-5 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold text-lg rounded-full hover:shadow-2xl transition-all duration-300 btn-hover">
-                Start Learning Today
-              </button>
-              <button className="px-10 py-5 border-2 border-white text-white font-bold text-lg rounded-full hover:bg-white hover:text-blue-900 transition-all duration-300 btn-hover">
-                Browse Course Catalog
-              </button>
+              <a href="/contact" className="px-10 py-5 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold text-lg rounded-full hover:shadow-2xl transition-all duration-300 btn-hover">
+                Get Early Access
+              </a>
+              <a href="/contact" className="px-10 py-5 border-2 border-white text-white font-bold text-lg rounded-full hover:bg-white hover:text-blue-900 transition-all duration-300 btn-hover">
+                Contact Us
+              </a>
             </div>
           </div>
         </div>

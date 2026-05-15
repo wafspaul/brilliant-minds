@@ -8,7 +8,6 @@ import {
   TrendingUp,
   Target,
   CheckCircle,
-  Star,
   Building,
   Zap,
   Heart,
@@ -25,29 +24,29 @@ const PartnersPage = () => {
   const heroContent = [
     {
       title: "Strategic Partnerships",
-      subtitle: "Building Tomorrow Together",
+      subtitle: "Building Together",
       description:
-        "Join our global network of partners and create meaningful impact through collaborative innovation and shared success.",
+        "We are open to partnerships with NGOs, county governments, corporates, and academic institutions who want to expand digital access and opportunity in Kenya.",
       video: "/videos/partners-hero-1.mp4",
-      stats: "200+ Global Partners",
+      stats: "Kenya + East Africa",
       highlight: "Strategic Alliance",
     },
     {
-      title: "Innovation Ecosystem",
-      subtitle: "Collaborative Growth Platform",
+      title: "Shared Mission",
+      subtitle: "Collaborative Growth",
       description:
-        "Connect with like-minded organizations to drive innovation, expand reach, and create value for communities worldwide.",
+        "If your organisation works in digital inclusion, workforce development, or education, we have tools and platforms that can extend your reach.",
       video: "/videos/partners-hero-2.mp4",
-      stats: "50+ Countries Connected",
-      highlight: "Innovation Hub",
+      stats: "Open to Collaboration",
+      highlight: "Shared Mission",
     },
     {
       title: "Mutual Success",
       subtitle: "Shared Vision, Shared Growth",
       description:
-        "Experience the power of partnership where success is measured not just in profits, but in positive impact and sustainable growth.",
+        "The best partnerships are simple. You bring your network and context. We bring our platforms and technical capacity. Together we create something that helps real people.",
       video: "/videos/partners-hero-3.mp4",
-      stats: "95% Partner Satisfaction",
+      stats: "Let's Talk",
       highlight: "Mutual Growth",
     },
   ]
@@ -62,7 +61,7 @@ const PartnersPage = () => {
     {
       icon: Zap,
       title: "Innovation Access",
-      description: "Leverage cutting-edge technology and innovative solutions to stay ahead of the competition",
+      description: "Access cutting-edge technology and practical solutions to stay ahead of your competition",
       color: "from-green-500 to-emerald-500",
     },
     {
@@ -74,7 +73,7 @@ const PartnersPage = () => {
     {
       icon: TrendingUp,
       title: "Revenue Growth",
-      description: "Unlock new revenue streams and business opportunities through strategic collaboration",
+      description: "Open new revenue streams and business opportunities through strategic collaboration",
       color: "from-orange-500 to-red-500",
     },
   ]
@@ -93,7 +92,7 @@ const PartnersPage = () => {
         "Technical support and training",
         "Co-innovation opportunities",
       ],
-      partnerCount: "50+ Tech Partners",
+      partnerCount: "Open for Tech Partners",
     },
     {
       icon: Handshake,
@@ -108,7 +107,7 @@ const PartnersPage = () => {
         "Lead sharing and referrals",
         "Joint go-to-market strategies",
       ],
-      partnerCount: "100+ Channel Partners",
+      partnerCount: "Open for Channel Partners",
     },
     {
       icon: Heart,
@@ -123,87 +122,11 @@ const PartnersPage = () => {
         "Educational partnerships",
         "Sustainability projects",
       ],
-      partnerCount: "75+ Impact Partners",
+      partnerCount: "Open for Impact Partners",
     },
   ]
 
-  const partnerLogos = [
-    { name: "TechCorp", logo: "/images/logo1.png" },
-    { name: "InnovateLab", logo: "/images/logo2.png" },
-    { name: "GlobalSolutions", logo: "/images/logo3.png" },
-    { name: "FutureWorks", logo: "/images/logo4.png" },
-    { name: "DigitalBridge", logo: "/images/logo5.png" },
-    { name: "SmartVentures", logo: "/images/logo6.png" },
-    { name: "NextGen", logo: "/images/logo7.png" },
-    { name: "CloudFirst", logo: "/images/logo8.png" },
-  ]
-
-  const partnerSuccess = [
-    {
-      company: "TechInnovate Solutions",
-      industry: "Technology",
-      logo: "/images/partners/techinnovate-logo.png",
-      quote:
-        "Our partnership with BrilliantMinds has opened doors to new markets and accelerated our growth by 300%. The collaborative approach and shared vision make this partnership truly exceptional.",
-      achievement: "300% revenue growth",
-      partnerSince: "2022",
-      rating: 5,
-      representative: "Sarah Chen, CEO",
-    },
-    {
-      company: "Global Education Network",
-      industry: "Education",
-      logo: "/images/partners/globaledu-logo.png",
-      quote:
-        "Through this strategic alliance, we've been able to reach underserved communities worldwide and make quality education accessible to millions of learners.",
-      achievement: "2M+ learners reached",
-      partnerSince: "2021",
-      rating: 5,
-      representative: "Dr. Michael Rodriguez, Director",
-    },
-    {
-      company: "Sustainable Futures Inc",
-      industry: "Sustainability",
-      logo: "/images/partners/sustainable-logo.png",
-      quote:
-        "The impact partnership has enabled us to scale our environmental initiatives and create lasting change in communities across 25 countries.",
-      achievement: "25 countries impacted",
-      partnerSince: "2023",
-      rating: 5,
-      representative: "Emma Thompson, Founder",
-    },
-  ]
-
-  const impactMetrics = [
-    {
-      number: "200+",
-      label: "Global Partners",
-      description: "Strategic partnerships worldwide",
-      icon: Handshake,
-      color: "from-blue-500 to-cyan-500",
-    },
-    {
-      number: "50+",
-      label: "Countries",
-      description: "International market presence",
-      icon: Globe,
-      color: "from-green-500 to-emerald-500",
-    },
-    {
-      number: "95%",
-      label: "Satisfaction Rate",
-      description: "Partner satisfaction score",
-      icon: Star,
-      color: "from-purple-500 to-violet-500",
-    },
-    {
-      number: "$50M+",
-      label: "Partner Revenue",
-      description: "Generated through partnerships",
-      icon: TrendingUp,
-      color: "from-orange-500 to-red-500",
-    },
-  ]
+  // Partner logos, success stories, and impact metrics not yet available
 
   const partnershipProcess = [
     {
@@ -308,12 +231,12 @@ const PartnersPage = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 sm:justify-center pt-2 sm:pt-4">
-                <button className="px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-bold text-sm sm:text-base rounded-full hover:shadow-2xl transition-all duration-300 btn-hover">
-                  Become a Partner
-                </button>
-                <button className="px-6 py-3 sm:px-8 sm:py-4 bg-white/20 backdrop-blur-lg border-2 border-white/30 text-white font-bold text-sm sm:text-base rounded-full hover:bg-white/30 transition-all duration-300 btn-hover">
-                  Explore Partnerships
-                </button>
+                <a href="/contact" className="px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-bold text-sm sm:text-base rounded-full hover:shadow-2xl transition-all duration-300 btn-hover">
+                  Get in Touch
+                </a>
+                <a href="#partnership-process" className="px-6 py-3 sm:px-8 sm:py-4 bg-white/20 backdrop-blur-lg border-2 border-white/30 text-white font-bold text-sm sm:text-base rounded-full hover:bg-white/30 transition-all duration-300 btn-hover">
+                  How It Works
+                </a>
               </div>
             </div>
           </div>
@@ -404,10 +327,10 @@ const PartnersPage = () => {
                     ))}
                   </div>
 
-                  <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-bold rounded-full hover:shadow-xl transition-all duration-300 btn-hover">
-                    Learn More About {type.title}
+                  <a href="/contact" className="inline-block px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-bold rounded-full hover:shadow-xl transition-all duration-300 btn-hover">
+                    Discuss {type.title}
                     <ArrowRight className="w-5 h-5 inline ml-2" />
-                  </button>
+                  </a>
                 </div>
 
                 <div className={`relative ${index % 2 === 1 ? "lg:col-start-1" : ""}`}>
@@ -435,84 +358,6 @@ const PartnersPage = () => {
         </div>
       </section>
 
-      {/* Partner Logos */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="section-reveal text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Trusted by Leading Organizations</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-8" />
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Join a network of innovative companies and organizations that are shaping the future together
-            </p>
-          </div>
-
-          <div className="section-reveal grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8 items-center">
-            {partnerLogos.map((partner, index) => (
-              <div
-                key={index}
-                className="card-hover bg-gray-50 rounded-xl p-6 flex items-center justify-center h-24 grayscale hover:grayscale-0 transition-all duration-300"
-              >
-                <Image
-                  src={partner.logo || "/placeholder.svg"}
-                  alt={partner.name}
-                  width={120}
-                  height={60}
-                  className="max-w-full max-h-full object-contain"
-                  quality={85}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Partner Success Stories */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
-        <div className="container mx-auto px-4">
-          <div className="section-reveal text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Partner Success Stories</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-8" />
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Discover how our partners have achieved remarkable growth and impact through strategic collaboration
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {partnerSuccess.map((story, index) => (
-              <div
-                key={index}
-                className="section-reveal card-hover bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-100"
-              >
-                <div className="p-8">
-                  <div className="flex items-center mb-6">
-                    <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mr-4">
-                      <Building className="w-8 h-8 text-gray-600" />
-                    </div>
-                    <div>
-                      <h4 className="text-xl font-bold text-gray-900">{story.company}</h4>
-                      <p className="text-blue-600 font-semibold">{story.industry}</p>
-                      <p className="text-gray-500 text-sm">Partner since {story.partnerSince}</p>
-                    </div>
-                  </div>
-
-                  <p className="text-gray-700 italic mb-6 leading-relaxed">&ldquo;{story.quote}&rdquo;</p>
-
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="flex space-x-1">
-                      {[...Array(story.rating)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
-                      ))}
-                    </div>
-                    <span className="text-sm font-semibold text-green-600">{story.achievement}</span>
-                  </div>
-
-                  <p className="text-gray-600 text-sm">{story.representative}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Partnership Process */}
       <section className="py-20 bg-white">
@@ -543,36 +388,6 @@ const PartnersPage = () => {
         </div>
       </section>
 
-      {/* Impact Metrics */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
-        <div className="container mx-auto px-4">
-          <div className="section-reveal text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Partnership Impact</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-8" />
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Real numbers that demonstrate the power and success of our partnership ecosystem
-            </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {impactMetrics.map((metric, index) => (
-              <div
-                key={index}
-                className="section-reveal card-hover bg-white rounded-2xl p-8 text-center shadow-xl border border-gray-100"
-              >
-                <div
-                  className={`w-20 h-20 bg-gradient-to-r ${metric.color} rounded-full flex items-center justify-center mx-auto mb-6`}
-                >
-                  {React.createElement(metric.icon, { className: "w-10 h-10 text-white" })}
-                </div>
-                <div className="text-4xl font-bold text-gray-900 mb-2">{metric.number}</div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">{metric.label}</h3>
-                <p className="text-gray-600 text-sm">{metric.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-indigo-900 via-blue-800 to-purple-900 text-white">
@@ -581,17 +396,17 @@ const PartnersPage = () => {
             <h2 className="text-4xl lg:text-5xl font-bold mb-6">Ready to Partner with Us?</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-indigo-500 mx-auto mb-8" />
             <p className="text-xl text-gray-200 max-w-4xl mx-auto mb-12 leading-relaxed">
-              Join our global network of partners and unlock new opportunities for growth, innovation, and positive
+              Join our network of partners and open new opportunities for growth, innovation, and positive
               impact. Together, we can build a better future.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <button className="px-10 py-5 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-bold text-lg rounded-full hover:shadow-2xl transition-all duration-300 btn-hover">
-                Become a Partner
-              </button>
-              <button className="px-10 py-5 border-2 border-white text-white font-bold text-lg rounded-full hover:bg-white hover:text-indigo-900 transition-all duration-300 btn-hover">
-                Download Partnership Guide
-              </button>
+              <a href="/contact" className="px-10 py-5 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-bold text-lg rounded-full hover:shadow-2xl transition-all duration-300 btn-hover">
+                Start a Conversation
+              </a>
+              <a href="mailto:hello@brilliantminds.co.ke?subject=Partnership Inquiry" className="px-10 py-5 border-2 border-white text-white font-bold text-lg rounded-full hover:bg-white hover:text-indigo-900 transition-all duration-300 btn-hover">
+                Email Us Directly
+              </a>
             </div>
           </div>
         </div>

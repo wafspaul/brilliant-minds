@@ -36,7 +36,7 @@ const SkillDevelopmentPage = () => {
       subtitle: "Self-Paced Learning Excellence",
       description:
         "Comprehensive skill development programs designed to equip freelancers and professionals with cutting-edge capabilities for the digital economy.",
-      stats: "15,000+ Skills Mastered",
+      stats: "In Development",
     },
     {
       image:
@@ -45,7 +45,7 @@ const SkillDevelopmentPage = () => {
       subtitle: "Live Webinars & Workshops",
       description:
         "Connect with industry leaders through interactive sessions, gaining practical insights and networking opportunities from global experts.",
-      stats: "500+ Expert Sessions",
+      stats: "Coming Soon",
     },
     {
       image:
@@ -53,8 +53,8 @@ const SkillDevelopmentPage = () => {
       title: "Global Learning Community",
       subtitle: "Worldwide Knowledge Exchange",
       description:
-        "Join a diverse community of learners from 80+ countries, sharing experiences and building professional networks across continents.",
-      stats: "80+ Countries Connected",
+        "Join a community of learners in Kenya and East Africa, sharing experiences and building professional networks across the region.",
+      stats: "Kenya + East Africa",
     },
     {
       image:
@@ -63,7 +63,7 @@ const SkillDevelopmentPage = () => {
       subtitle: "Industry-Recognized Credentials",
       description:
         "Earn certificates that matter in today's job market, with pathways designed by industry professionals and validated by employers.",
-      stats: "95% Employment Rate",
+      stats: "Mission-Driven",
     },
   ]
 
@@ -99,40 +99,40 @@ const SkillDevelopmentPage = () => {
       icon: Briefcase,
       title: "Freelancing Essentials",
       description: "Master the fundamentals of successful freelancing",
-      image: "/images/freelancing-course.jpg",
+      image: "/placeholder.svg",
       gradient: "from-emerald-600/90 to-teal-600/90",
       courses: 12,
       duration: "40 hours",
       level: "Beginner to Advanced",
       skills: ["Client Communication", "Project Management", "Pricing Strategies", "Portfolio Building"],
       rating: 4.9,
-      students: "8,500+",
+      students: "Coming Soon",
     },
     {
       icon: Code,
       title: "Digital Tools Mastery",
       description: "Advanced proficiency in essential digital tools and platforms",
-      image: "/images/digital-tools-course.jpg",
+      image: "/placeholder.svg",
       gradient: "from-blue-600/90 to-indigo-600/90",
       courses: 18,
       duration: "60 hours",
       level: "Intermediate",
       skills: ["Design Software", "Development Tools", "Analytics Platforms", "Automation Tools"],
       rating: 4.8,
-      students: "12,300+",
+      students: "Coming Soon",
     },
     {
       icon: Users,
       title: "Professional Soft Skills",
       description: "Essential interpersonal and leadership capabilities",
-      image: "/images/soft-skills-course.jpg",
+      image: "/placeholder.svg",
       gradient: "from-purple-600/90 to-pink-600/90",
       courses: 15,
       duration: "35 hours",
       level: "All Levels",
       skills: ["Communication", "Leadership", "Problem Solving", "Time Management"],
       rating: 4.9,
-      students: "9,800+",
+      students: "Coming Soon",
     },
   ]
 
@@ -163,116 +163,33 @@ const SkillDevelopmentPage = () => {
     },
   ]
 
-  const globalTestimonials = [
-    {
-      name: "Sarah Wambui",
-      location: "Nairobi",
-      role: "UX Designer",
-      image: "/images/testimonial-1.jpg",
-      quote:
-        "The digital tools mastery course transformed my design workflow. I increased my project efficiency by 300% and landed my dream remote job.",
-      rating: 5,
-      course: "Digital Tools Mastery",
-      flag: "🇰🇪",
-    },
-    {
-      name: "Carlos Rodriguez",
-      location: "Mexico City, Mexico",
-      role: "Full-Stack Developer",
-      image: "/images/testimonial-2.jpg",
-      quote:
-        "The freelancing essentials program gave me the confidence and skills I needed to start my own development consultancy. Revenue grew 400% in 6 months.",
-      rating: 5,
-      course: "Freelancing Essentials",
-      flag: "🇲🇽",
-    },
-    {
-      name: "Amara Okafor",
-      location: "Lagos, Nigeria",
-      role: "Digital Marketing Specialist",
-      image: "/images/testimonial-3.jpg",
-      quote:
-        "The soft skills training helped me become a better team leader. I was promoted to senior manager within 8 months of completing the course.",
-      rating: 5,
-      course: "Professional Soft Skills",
-      flag: "🇳🇬",
-    },
-  ]
-
-  const upcomingEvents = [
-    {
-      date: "15",
-      month: "Jan",
-      title: "Mastering Client Communication",
-      description: "Learn effective strategies for client relationship management",
-      time: "2:00 PM - 4:00 PM EST",
-      instructor: "Sarah Johnson",
-      category: "Communication",
-      color: "from-blue-500 to-blue-600",
-      attendees: 245,
-    },
-    {
-      date: "22",
-      month: "Jan",
-      title: "Digital Marketing Essentials",
-      description: "Comprehensive guide to modern digital marketing strategies",
-      time: "10:00 AM - 12:00 PM EST",
-      instructor: "Mike Chen",
-      category: "Marketing",
-      color: "from-green-500 to-green-600",
-      attendees: 189,
-    },
-    {
-      date: "28",
-      month: "Jan",
-      title: "Pricing Your Freelance Services",
-      description: "Learn how to price your services competitively while ensuring profitability",
-      time: "3:00 PM - 5:00 PM EST",
-      instructor: "Lisa Rodriguez",
-      category: "Business",
-      color: "from-yellow-500 to-orange-500",
-      attendees: 156,
-    },
-    {
-      date: "05",
-      month: "Feb",
-      title: "Portfolio Development Workshop",
-      description: "Create a compelling portfolio that showcases your skills and attracts clients",
-      time: "1:00 PM - 4:00 PM EST",
-      instructor: "David Kim",
-      category: "Portfolio",
-      color: "from-purple-500 to-purple-600",
-      attendees: 203,
-    },
-  ]
-
   const impactMetrics = [
     {
-      number: "25,000+",
-      label: "Students Trained",
-      description: "Professionals skilled globally",
+      number: "6,000+",
+      label: "People Reached",
+      description: "Through our programs and platforms",
       icon: Users,
       color: "from-emerald-500 to-teal-500",
     },
     {
-      number: "500+",
-      label: "Expert Instructors",
-      description: "Industry professionals teaching",
-      icon: UserCheck,
+      number: "47",
+      label: "Counties Mapped",
+      description: "Kenya connectivity data coverage",
+      icon: Globe,
       color: "from-blue-500 to-indigo-500",
     },
     {
-      number: "95%",
-      label: "Job Placement Rate",
-      description: "Students finding work post-training",
+      number: "2",
+      label: "Live Platforms",
+      description: "Kazi Pap and Kenya Connectivity Map",
       icon: TrendingUp,
       color: "from-purple-500 to-pink-500",
     },
     {
-      number: "80+",
-      label: "Countries Reached",
-      description: "Global learning community",
-      icon: Globe,
+      number: "Kenya",
+      label: "Home Base",
+      description: "Built in Nairobi, for Africa",
+      icon: UserCheck,
       color: "from-orange-500 to-red-500",
     },
   ]
@@ -359,18 +276,12 @@ const SkillDevelopmentPage = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 sm:justify-center pt-2 sm:pt-4">
-  <button 
-    onClick={() => window.location.href = '/solutions/e-learning'}
-    className="px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold text-sm sm:text-base rounded-full hover:shadow-2xl transition-all duration-300 btn-hover"
-  >
-    Start Learning
-  </button>
-  <button 
-    onClick={() => window.location.href = '/solutions/e-learning'}
-    className="px-6 py-3 sm:px-8 sm:py-4 bg-white/20 backdrop-blur-lg border-2 border-white/30 text-white font-bold text-sm sm:text-base rounded-full hover:bg-white/30 transition-all duration-300 btn-hover"
-  >
-    View Courses
-  </button>
+  <a href="/contact" className="px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold text-sm sm:text-base rounded-full hover:shadow-2xl transition-all duration-300 btn-hover">
+    Get Notified at Launch
+  </a>
+  <a href="/contact" className="px-6 py-3 sm:px-8 sm:py-4 bg-white/20 backdrop-blur-lg border-2 border-white/30 text-white font-bold text-sm sm:text-base rounded-full hover:bg-white/30 transition-all duration-300 btn-hover">
+    Learn More
+  </a>
 </div>
             </div>
           </div>
@@ -483,10 +394,10 @@ const SkillDevelopmentPage = () => {
                     </div>
                   </div>
 
-                  <button className="px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold rounded-full hover:shadow-xl transition-all duration-300 btn-hover">
-                    Explore {category.title}
+                  <a href="/contact" className="inline-block px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold rounded-full hover:shadow-xl transition-all duration-300 btn-hover">
+                    Learn More
                     <ArrowRight className="w-5 h-5 inline ml-2" />
-                  </button>
+                  </a>
                 </div>
 
                 {/* Image */}
@@ -525,34 +436,13 @@ const SkillDevelopmentPage = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Image Side */}
             <div className="section-reveal">
-              <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
-                <Image
-                  src="/images/webinar-hero.jpg"
-                  alt="Interactive Webinars"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover"
-                  quality={85}
-                />
-                <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/30 to-teal-900/30" />
-                <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-sm rounded-full px-4 py-2">
-                  <div className="flex items-center space-x-2">
-                    <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
-                    <span className="text-sm font-semibold text-gray-900">LIVE</span>
+              <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-emerald-800 to-teal-900 flex items-center justify-center">
+                <div className="text-center text-white p-8">
+                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Video className="w-10 h-10 text-white" />
                   </div>
-                </div>
-                <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-sm rounded-xl p-4">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <p className="font-semibold text-gray-900">Advanced Freelancing Strategies</p>
-                      <p className="text-sm text-gray-600">245 participants • 1h 30m remaining</p>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <div className="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center">
-                        <Video className="w-4 h-4 text-white" />
-                      </div>
-                    </div>
-                  </div>
+                  <p className="text-xl font-bold mb-2">Webinars Coming Soon</p>
+                  <p className="text-white/80 text-sm">Live sessions with industry experts</p>
                 </div>
               </div>
             </div>
@@ -586,122 +476,34 @@ const SkillDevelopmentPage = () => {
                   ))}
                 </div>
 
-                <button 
-              onClick={() => window.location.href = '/contact'}
-              className="px-10 py-5 border-2 border-emerald bg-emerald-500 text-white font-bold text-lg rounded-full hover:bg-white hover:text-emerald-900 transition-all duration-300 btn-hover"
-            >
-              View Upcoming Webinars
-            </button>
+                <a
+                  href="/contact"
+                  className="inline-block px-10 py-5 border-2 border-emerald bg-emerald-500 text-white font-bold text-lg rounded-full hover:bg-white hover:text-emerald-900 transition-all duration-300 btn-hover"
+                >
+                  Contact Us
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Global Testimonials */}
-      <section className="py-20 bg-gradient-to-br from-emerald-50 to-teal-50">
-        <div className="container mx-auto px-4">
-          <div className="section-reveal text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Global Success Stories</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-600 mx-auto mb-8" />
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Hear from professionals around the world who have transformed their careers through our skill development
-              programs
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {globalTestimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className="section-reveal card-hover bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-100"
-              >
-                <div className="relative h-48">
-                  <Image
-                    src={testimonial.image || "/placeholder.svg"}
-                    alt={testimonial.name}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover"
-                    quality={85}
-                  />
-                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1">
-                    <span className="text-xs font-semibold text-gray-700">{testimonial.course}</span>
-                  </div>
-                  <div className="absolute top-4 left-4 text-2xl">{testimonial.flag}</div>
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900">{testimonial.name}</h3>
-                      <p className="text-emerald-600 font-semibold">{testimonial.role}</p>
-                      <p className="text-gray-600 text-sm">{testimonial.location}</p>
-                    </div>
-                    <div className="flex">
-                      {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
-                      ))}
-                    </div>
-                  </div>
-                  <p className="text-gray-700 italic leading-relaxed">&ldquo;{testimonial.quote}&rdquo;</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Upcoming Events */}
+      {/* Coming Soon - Events */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="section-reveal text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Upcoming Learning Events</h2>
+          <div className="section-reveal text-center">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Learning Events</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-600 mx-auto mb-8" />
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Join our upcoming sessions, workshops, and skill development sessions
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
+              Workshops, webinars, and skill sessions are in the works. Register your interest and we will notify you
+              when the first events go live.
             </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {upcomingEvents.map((event, index) => (
-              <div
-                key={index}
-                className="section-reveal card-hover bg-gradient-to-br from-white to-gray-50 rounded-2xl overflow-hidden shadow-xl border border-gray-100"
-              >
-                <div className={`bg-gradient-to-r ${event.color} p-6 text-white`}>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold">{event.date}</div>
-                    <div className="text-lg font-semibold opacity-90">{event.month}</div>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <div className="mb-4">
-                    <span className="inline-block bg-gray-100 text-gray-700 text-xs font-semibold px-3 py-1 rounded-full mb-2">
-                      {event.category}
-                    </span>
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">{event.title}</h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">{event.description}</p>
-                  </div>
-                  <div className="space-y-2 text-sm text-gray-600">
-                    <div className="flex items-center">
-                      <Clock className="w-4 h-4 mr-2 flex-shrink-0" />
-                      <span>{event.time}</span>
-                    </div>
-                    <div className="flex items-center">
-                      <UserCheck className="w-4 h-4 mr-2 flex-shrink-0" />
-                      <span>{event.instructor}</span>
-                    </div>
-                    <div className="flex items-center">
-                      <Users className="w-4 h-4 mr-2 flex-shrink-0" />
-                      <span>{event.attendees} registered</span>
-                    </div>
-                  </div>
-                  <button className="w-full mt-4 px-4 py-2 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-semibold text-sm rounded-lg hover:shadow-lg transition-all duration-300 btn-hover">
-                    Register Now
-                  </button>
-                </div>
-              </div>
-            ))}
+            <a
+              href="/contact"
+              className="inline-block px-10 py-5 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold text-lg rounded-full hover:shadow-2xl transition-all duration-300 btn-hover"
+            >
+              Get Notified
+            </a>
           </div>
         </div>
       </section>
@@ -744,24 +546,24 @@ const SkillDevelopmentPage = () => {
             <h2 className="text-4xl lg:text-5xl font-bold mb-6">Ready to Enhance Your Skills?</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-emerald-400 to-teal-500 mx-auto mb-8" />
             <p className="text-xl text-gray-200 max-w-4xl mx-auto mb-12">
-              Join thousands of professionals who have transformed their careers through our comprehensive skill
-              development programs. Start your learning journey today and unlock your potential in the digital economy.
+              Skill development programs for Kenyan freelancers and professionals are in the works. Register your
+              interest now and be first to know when we launch.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <button 
-              onClick={() => window.location.href = '/contact'}
-              className="px-10 py-5 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold text-lg rounded-full hover:shadow-2xl transition-all duration-300 btn-hover"
-            >
-              Sign Up for a Course
-            </button>
-            <button 
-              onClick={() => window.location.href = '/contact'}
-              className="px-10 py-5 border-2 border-white text-white font-bold text-lg rounded-full hover:bg-white hover:text-emerald-900 transition-all duration-300 btn-hover"
-            >
-              View Upcoming Webinars
-            </button>
-          </div>
+              <a
+                href="/contact"
+                className="px-10 py-5 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold text-lg rounded-full hover:shadow-2xl transition-all duration-300 btn-hover"
+              >
+                Get Notified at Launch
+              </a>
+              <a
+                href="/contact"
+                className="px-10 py-5 border-2 border-white text-white font-bold text-lg rounded-full hover:bg-white hover:text-emerald-900 transition-all duration-300 btn-hover"
+              >
+                Contact Us
+              </a>
+            </div>
           </div>
         </div>
       </section>

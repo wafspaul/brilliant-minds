@@ -12,7 +12,6 @@ import {
   Globe,
   Smartphone,
   Award,
-  CheckCircle,
   ArrowRight,
   Play,
   Target,
@@ -223,32 +222,6 @@ const SolutionsPage = () => {
     },
   ]
 
-  const successStories = [
-    {
-      title: "Rural School Transformation",
-      description:
-        "A remote village school gained access to high-speed internet and digital devices, increasing student engagement by 300%.",
-      image: "/images/gig-testimonial-3.jpg",
-      impact: "300% increase in engagement",
-      location: "Rural Kenya",
-    },
-    {
-      title: "From Student to Developer",
-      description:
-        "Our e-learning platform helped Maria transition from unemployment to becoming a senior software developer in 8 months.",
-      image: "/images/developer-success.jpg",
-      impact: "Career transformation",
-      location: "São Paulo, Brazil",
-    },
-    {
-      title: "Community Tech Hub",
-      description:
-        "A local community center became a thriving tech hub, providing digital services to over 5,000 residents monthly.",
-      image: "/images/tech-hub-success.jpg",
-      impact: "5,000+ monthly users",
-      location: "Nairobi, Kenya",
-    },
-  ]
 
   // Hero image rotation
   useEffect(() => {
@@ -535,48 +508,36 @@ const SolutionsPage = () => {
         </div>
       </section>
 
-      {/* Success Stories */}
+      {/* Work in Progress */}
       <section id="success-stories" className="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
         <div className="container mx-auto px-4">
-          <div className="section-reveal text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Success Stories</h2>
+          <div className="section-reveal text-center">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Impact in Progress</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-8" />
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Real transformations happening in communities around the world through our solutions
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
+              We are early. The work is real, the platforms are live, and the stories are building. Check back as we
+              grow.
             </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {successStories.map((story, index) => (
-              <div
-                key={index}
-                className="section-reveal card-hover bg-white  overflow-hidden shadow-lg border border-gray-100 h-full"
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+              <a
+                href="https://kazipap.co.ke"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-purple-500 to-violet-500 text-white font-bold text-lg hover:shadow-xl transition-all duration-300"
               >
-                <div className="relative h-48">
-                  <Image
-                    src={story.image || "/placeholder.svg"}
-                    alt={story.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover"
-                  />
-                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm  px-3 py-1">
-                    <span className="text-xs font-semibold text-gray-700">{story.location}</span>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">{story.title}</h3>
-                  <p className="text-gray-600 mb-4">{story.description}</p>
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center space-x-2">
-                      <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span className="text-sm font-semibold text-green-600">{story.impact}</span>
-                    </div>
-                    <span className="text-gray-400 text-sm italic">More coming soon</span>
-                  </div>
-                </div>
-              </div>
-            ))}
+                Open Kazi Pap
+                <ArrowRight className="w-5 h-5" />
+              </a>
+              <a
+                href="https://kenya-connectivity-map.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold text-lg hover:shadow-xl transition-all duration-300"
+              >
+                View Connectivity Map
+                <ArrowRight className="w-5 h-5" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -603,19 +564,19 @@ const SolutionsPage = () => {
               community. Let&apos;s create lasting change together.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <button 
-              onClick={() => window.location.href = '/contact'}
-              className="px-10 py-5 bg-white text-blue-900 font-bold text-lg rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg cursor-pointer"
-            >
-              Start Your Transformation
-            </button>
-            <button 
-              onClick={() => window.location.href = '/contact'}
-              className="px-10 py-5 border-2 border-white text-white font-bold text-lg rounded-full hover:bg-white hover:text-blue-900 transition-all duration-300"
-            >
-              Schedule Consultation
-            </button>
-          </div>
+              <a
+                href="/contact"
+                className="px-10 py-5 bg-white text-blue-900 font-bold text-lg rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg"
+              >
+                Get in Touch
+              </a>
+              <a
+                href="/get-involved"
+                className="px-10 py-5 border-2 border-white text-white font-bold text-lg rounded-full hover:bg-white hover:text-blue-900 transition-all duration-300"
+              >
+                Get Involved
+              </a>
+            </div>
           </div>
         </div>
       </section>
